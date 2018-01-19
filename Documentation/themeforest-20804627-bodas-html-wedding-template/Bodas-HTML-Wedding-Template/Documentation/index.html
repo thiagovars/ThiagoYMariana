@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Documentation - Bodas (Responsive HTML Wedding Template)</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,700italic,600italic,800italic' rel='stylesheet' type='text/css'>
+
+    <link href="assets/jquery.tocify.css" rel="stylesheet">
+    <link href="assets/prettify.css" type="text/css" rel="stylesheet" />
+    
+    <link href="assets/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://marttinfisher.com" target="_blank"><img src="assets/logo-marttinfisher.png"/></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid main-content">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div id="toc"></div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+            <div class="Intro">
+                <div style="width:100%;">
+                    <img src="assets/thumbnail.jpg" alt="" style="float:left;margin-right: 14px;">
+                    <h1 style="margin:0px;">Bodas HTML Wedding Template</h1>
+                    <h2 style="margin:0px;">Documentation</h2>
+                    <br />
+                </div>
+                <br />
+                <div style="width:100%;">
+                    <p>"BODAS" is a Responsive HTML Wedding Template with clean, elegant and modern design. Great for wedding invitation or engagement. Coming with wedding features such as Couple Timeline, Countdown, Photo gallery, featured people, Gift Registry, RSVP and others. This template is responsive using Bootstrap Framework and optimized for mobile device.</p>
+                    <p>
+                      <a class="btn btn-primary active" href="https://themeforest.net/user/marttinfisher/portfolio?ref=marttinfisher">Purchase</a>
+                      <a class="btn btn-success active" href="https://themeforest.net/user/marttinfisher/?ref=marttinfisher" target="_blank">Profile</a>
+                      <a class="btn btn-info active" href="http://marttinfisher.com" target="_blank">Support</a>
+                    </p>
+                </div>
+              </div>
+
+            
+
+
+              <div class="well">
+                <h2>Template Structure</h2>
+                All template files have fixed structure consisting of <code>navbar</code>, <code>content</code> and <code>footer</code> as shown below:
+                <br><br>
+
+                <h3>Page Head</h3>
+                Page head contains metadata and css files:
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+  &lt;head>
+    &lt;meta charset="utf-8">
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+    &lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    &lt;title>Bodas - wedding HTML theme</title>
+
+    &lt;!-- Bootstrap -->
+    &lt;link href="css/bootstrap.min.css" rel="stylesheet">
+
+    &lt;!-- TimeCircles-countdown -->
+    &lt;link rel="stylesheet" href="libs/TimeCircles-countdown/TimeCircles.css">
+
+    &lt;!-- Owl stylesheet -->
+    &lt;link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
+    &lt;link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+
+    &lt;!-- Magnific Popup -->
+    &lt;link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+
+    &lt;!-- Loading Rolling -->
+    &lt;link href="libs/loading/rolling.css" rel="stylesheet">
+    
+    &lt;!-- Fonts -->
+    &lt;link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    &lt;link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,700italic,600italic,800italic' rel='stylesheet' type='text/css'>
+
+    &lt;!-- FontAwesome Icons -->
+    &lt;link rel="stylesheet" href="css/font-awesome.min.css">
+
+    &lt;!-- Theme Main Style -->
+    &lt;link href="css/theme-style.css" rel="stylesheet">
+    
+    &lt;!--========================Color Variant====================-->
+    &lt;link rel="stylesheet" type="text/css" href="css/colors/pink.css">
+
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    &lt;!--[if lt IE 9]>
+      &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      &lt;script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    &lt;![endif]-->
+  &lt;/head></pre>
+
+                <h3>Full Screen Loading</h3>
+                "fullscreenloading" is added in very first place after <code>&lt;body></code> tag. It is used in AJAX requests from RSVP form.
+<pre class="prettyprint linenums">
+&lt;!-- END: fullscreenloading -->
+&lt;div id="fullscreenloading">
+    &lt;div id="fullscreenloading-content">
+        &lt;div id="boxedResult">
+            &lt;div id="sendResult">
+                &lt;div class='uil-rolling-css' style='transform:scale(0.36);'>&lt;div>&lt;div>&lt;/div>&lt;div>&lt;/div>&lt;/div>&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+&lt;!-- END: fullscreenloading -->
+</pre>
+
+                <h3>Navbar</h3>
+                Navbar have bootstrap navbar structure. Over here you can change the names of the Groom (Fragment - Line #7) and the bride (Fragment - Line #9).
+<pre class="prettyprint linenums">
+&lt;!-- START: main-sticky-nav -->
+&lt;header>
+    &lt;div class="sticky-wrapper" id="nav-sticky-wrapper">&lt;nav style="" id="nav" class="navbar navbar-default" role="navigation">
+        &lt;div class="container">
+            &lt;a class="navbar-brand" href="#">
+                &lt;ul class="names">
+                    &lt;li>Marttin&lt;/li>
+                    &lt;li class="circle">&amp;&lt;/li>
+                    &lt;li>Julianne&lt;/li>
+                &lt;/ul>
+            &lt;/a>
+            &lt;!-- Brand and toggle get grouped for better mobile display -->
+            &lt;div class="navbar-header">
+                &lt;button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav_menu">
+                    &lt;span class="sr-only">Toggle navigation&lt;/span>
+                    &lt;span class="icon-bar">&lt;/span>
+                    &lt;span class="icon-bar">&lt;/span>
+                    &lt;span class="icon-bar">&lt;/span>
+                &lt;/button>
+            &lt;/div>
+
+            &lt;!-- Collect the nav links, forms, and other content for toggling -->
+            &lt;div class="collapse navbar-collapse" id="nav_menu">
+                &lt;ul id="nav_list" class="nav navbar-nav navbar-right">
+                    &lt;li class="active">&lt;a href="#home">Home&lt;/a>&lt;/li>
+                    &lt;li class="">&lt;a href="#couple">Couple&lt;/a>&lt;/li>  
+                    &lt;li class="">&lt;a href="#our-story">Our Story&lt;/a>&lt;/li>
+                    &lt;li class="">&lt;a href="#gallery">Gallery&lt;/a>&lt;/li>
+                    &lt;li class="">&lt;a href="#featured-people">Featured People&lt;/a>&lt;/li>
+                    &lt;li class="">&lt;a href="#gift-registry">Gifts&lt;/a>&lt;/li>
+                    &lt;li class="">&lt;a href="#rsvp">RSVP&lt;/a>&lt;/li>
+                &lt;/ul>
+            &lt;/div>&lt;!-- /.navbar-collapse -->
+        &lt;/div>&lt;!-- /.container -->
+    &lt;/nav>&lt;/div>
+&lt;/header>
+&lt;!-- END: main-sticky-nav -->
+</pre>
+
+                <h3>Content</h3>
+                Use any content after navbar and before body.
+
+
+                <h3>Footer</h3>
+                Footer section.
+<pre class="prettyprint linenums">
+&lt;!-- START: footer -->
+&lt;section id="footer" class="img-bg-5" data-stellar-background-ratio="0.5">
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
+                &lt;h1>Thank You!</h1>
+                &lt;ul class="names">
+                    &lt;li>Marttin</li>
+                    &lt;li class="circle">&amp;</li>
+                    &lt;li>Julianne</li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+&lt;!-- END: footer -->
+</pre>
+
+                <h3>Foot</h3>
+                Foot contains all JS scripts:
+<pre class="prettyprint linenums">
+&lt;!-- START: scripts -->
+&lt;!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+&lt;script src="js/jquery.min.js"></script>
+&lt;!-- Bootstrap main Js File-->
+&lt;script src="js/bootstrap.min.js"></script>
+    
+&lt;!-- Sticky Navbar -->
+&lt;script type="text/javascript" src="js/jquery.sticky.js"></script>
+&lt;script type="text/javascript" src="js/jquery.nav.js"></script>
+&lt;!-- owl-carousel -->
+&lt;script src="libs/owl-carousel/owl.carousel.min.js"></script>
+&lt;!-- Stellar -->
+&lt;script src="libs/stellar/jquery.stellar.min.js"></script>
+&lt;!-- TimeCircles-countdown -->
+&lt;script src="libs/TimeCircles-countdown/TimeCircles.js"></script>
+&lt;!-- gallery-grid -->
+&lt;script src="libs/gallery-grid/gallery-grid.js"></script>
+&lt;!-- Magnific Popup core JS file -->
+&lt;script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+&lt;!-- Bootstrap Validator -->
+&lt;script src="libs/bootstrap-validator/validator.min.js"></script>
+&lt;!-- Theme Main Js file -->
+&lt;script src="js/theme-main.js"></script>
+&lt;!-- END: scripts -->
+</pre>
+
+
+              </div>
+
+              <div class="well">
+                <h2>Fonts</h2>
+                <strong>Bodas Template</strong> uses Google fonts. For default text used Merriweather font, for headings used Tangerine font. Loaded in head section.
+<pre class="prettyprint linenums">
+&lt;link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+&lt;link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,700italic,600italic,800italic' rel='stylesheet' type='text/css'>
+</pre>
+              </div>
+
+              <div class="well">
+                <h2>Font Icons</h2>
+                <strong>Bodas Template</strong> uses FontAwesome font to display icons. It is loaded in head section.
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</pre>
+              </div>
+
+              <div class="well">
+                <h2>Colors</h2>
+                <p>
+                <strong>Bodas Template</strong> comes with 5 altername color schemes: <code>Pink</code> (default), <code>Green</code>, <code>Violet</code>, <code>Nude</code> and <code>Blue</code>.</p>
+                <div class="alert alert-warning">
+              <p><strong>IMPORTANT:</strong><br/>When you change CSS color scheme it will not affect the COUNTDOWN colors, so you will need to modify it separately in <code>js/theme-main.js</code> file.</p></div>
+                
+                <h3>CSS color</h3>
+                <p>To change theme, you need to use specified styles file instead of <code>css/colors/pink.css</code>.</p>
+                <p>
+                  Pink (default):
+                </p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="css/colors/pink.css">
+</pre>
+                <p>
+                  Green:
+                </p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="css/colors/green.css">
+</pre>
+                <p>
+                  Violet:
+                </p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="css/colors/violet.css">
+</pre>
+                <p>
+                  Nude:
+                </p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="css/colors/nude.css">
+</pre>
+                <p>
+                  Blue:
+                </p>
+<pre class="prettyprint linenums">
+&lt;link rel="stylesheet" type="text/css" href="css/colors/blue.css">
+</pre>
+              <h3>COUNTER color</h3>
+              <p>To change Counter colors you need to replace content from <code>line 38</code> to <code>line 43</code> in <code>js/theme-main.js</code> file with the color of your choice code:</p>
+                <p>
+                  Pink (default):
+                </p>
+<pre class="prettyprint linenums">
+time: {
+    Days: { color: '#f9667e' },
+    Hours: { color: '#f9667e' },
+    Minutes: { color: '#f9667e' },
+    Seconds: { color: '#f9667e' }
+},
+</pre>
+                <p>
+                  Green:
+                </p>
+<pre class="prettyprint linenums">
+time: {
+    Days: { color: '#92A568' },
+    Hours: { color: '#92A568' },
+    Minutes: { color: '#92A568' },
+    Seconds: { color: '#92A568' }
+},
+</pre>
+                <p>
+                  Violet:
+                </p>
+<pre class="prettyprint linenums">
+time: {
+    Days: { color: '#6A5674' },
+    Hours: { color: '#6A5674' },
+    Minutes: { color: '#6A5674' },
+    Seconds: { color: '#6A5674' }
+},
+</pre>
+                <p>
+                  Nude:
+                </p>
+<pre class="prettyprint linenums">
+time: {
+    Days: { color: '#C3A180' },
+    Hours: { color: '#C3A180' },
+    Minutes: { color: '#C3A180' },
+    Seconds: { color: '#C3A180' }
+},
+</pre>
+                <p>
+                  Blue:
+                </p>
+<pre class="prettyprint linenums">
+time: {
+    Days: { color: '#748392' },
+    Hours: { color: '#748392' },
+    Minutes: { color: '#748392' },
+    Seconds: { color: '#748392' }
+},
+</pre>
+
+
+              </div>
+
+            <div class="well">
+                                <h2>RSVP Form</h2>
+                                <p>To edit RSVP Form php file, please open the file call <code>send_form.php</code></p> 
+                                <ul>
+                                    <li>You can change the email where the form data will be sent on line #3. <code>$your_email="your_email@site.com";</code></li>
+                                    <li>You can change the ERROR ajax message after sent form on line #5. <code>$result = '&lt;img src="img/form-icon-error.png" style="width...</code></li>
+                                    <li>You can change the SUCCESS ajaxa message after sent form on line #24. <code>$result = '&lt;img src="img/form-icon-ok.png" style="width...</code></li>
+                                </ul>
+                                </p>
+<pre class="prettyprint linenums"><code>&lt;?php
+//Add here the email where you want to recieve data sent from the form.
+$your_email="your_email@site.com";
+
+$result = '&lt;img src="img/form-icon-error.png" style="width: 90px;"/>&lt;br/>&lt;span class="title error">Sorry!&lt;/span>&lt;br/>Your data has not been sent. Please try again.&lt;br />&lt;strong>Error: #AJ002&lt;/strong>&lt;br />&lt;br />&lt;button class="btn btn-default BtnCloseResult" type="button">Close&lt;/button>';
+if(!empty($_POST)){
+    
+    $events = '';
+    if(isset($_POST['events']) && $_POST['events'] != ''){
+        foreach($_POST['events'] as $value){
+            $events .= ''.$value.', ';
+        }
+    }
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    
+    $to      = $your_email;
+    $subject = 'New RSVP Form: '.$name;
+    $headers = 'From: '.$name.' <'.$email.'>' . "\r\n";
+    $message = 'New RSVP data sent from your website:'."\r\n".'Name: '.$name."\r\n".'Email: '.$email."\r\n".'Will attend: '.$events."\r\n".'Message: '.$message;
+    
+    if(mail($to, $subject, $message, $headers)){
+        $result = '&lt;img src="img/form-icon-ok.png" style="width: 90px;"/>&lt;br />&lt;span class="title success">Thanks!&lt;/span>&lt;br>Your info has been sent!&lt;br />&lt;br />&lt;button class="btn btn-default BtnCloseResult" type="button">Close&lt;/button>';
+    }
+}
+
+echo $result;
+?>
+</code></pre>
+              </div>
+
+              <div class="well">
+                <h2>Credits</h2>
+
+                <h3>Plugins</h3>
+                <ul>
+                  <li><strong>Bootstrap</strong> – <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+                  <li><strong>jQuery</strong> – <a href="http://jquery.com/">http://jquery.com/</a></li>
+                  <li><strong>Sticky</strong> – <a href="http://stickyjs.com/">http://stickyjs.com/</a></li>
+                  <li><strong>jQuery One Page Nav Plugin</strong> – <a href="http://github.com/davist11/jQuery-One-Page-Nav">http://github.com/davist11/jQuery-One-Page-Nav</a></li>
+                  <li><strong>jQuery OwlCarousel v1.3.3</strong> – <a href="http://www.owlgraphic.com/owlcarousel/">http://www.owlgraphic.com/owlcarousel/</a></li>
+                  <li><strong>Stellar.js v0.6.2</strong> – <a href="http://markdalgleish.com/projects/stellar.js">http://markdalgleish.com/projects/stellar.js</a></li>
+                  <li><strong>TimeCircles Countdown</strong> – <a href="https://github.com/wimbarelds/TimeCircles">https://github.com/wimbarelds/TimeCircles</a></li>
+                  <li><strong>Portfolio Gallery</strong> – <a href="https://bootsnipp.com/snippets/GzKKE">https://bootsnipp.com/snippets/GzKKE</a></li>
+                  <li><strong>Magnific Popup</strong> – <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+                  <li><strong>Bootstrap Validator</strong> – <a href="https://github.com/1000hz/bootstrap-validator">https://github.com/1000hz/bootstrap-validator</a></li>
+                  <li><strong>FontAwesome</strong> – <a href="http://fontawesome.io/">http://fontawesome.io/</a></li>
+                </ul>
+
+                <h3>Images</h3>
+                <p>Example images can find it at: <a href="https://photodune.net/">https://photodune.net/</a>.</p>
+                <div class="alert alert-warning">DEMO IMAGES ARE NOT INCLUDED IN THIS THEME PACKAGE! Used only in demo pages.</div>
+
+              </div>
+
+
+
+              <div class="well">
+                <h2>End of documentation</h2>
+                <h4>Thanks for purchasing "Bodas HTML Wedding Template"</h4>
+                <p>I hope you enjoy using it for your next project as I enjoyed it designing and developing it for you!</p>
+                <p>More about me:</p>
+                <ul>
+                    <li>Envato Profile: <a href="https://themeforest.net/user/marttinfisher/?ref=marttinfisher" target="_blank">Marttin Fisher</a></li>
+                    <li>Envato Portfolio: <a href="https://themeforest.net/user/marttinfisher/portfolio?ref=marttinfisher" target="_blank">Marttin Fisher</a></li>
+                    <li>Website: <a href="http://marttinfisher.com/?ref=bodas-documentation" target="_blank">marttinfisher.com</a></li>
+                    <li>Email: <a href="mailto:info@marttinfisher.com;" target="_blank">info@marttinfisher.com</a></li>
+                </ul>
+              </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap.min.js"></script>
+
+    <script src="assets/jquery-ui-1.9.1.custom.min.js"></script>
+    <script src="assets/jquery.tocify.min.js"></script>
+    <script src="assets/smoothscroll-for-websites/SmoothScroll.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script>
+        $(function() {
+
+            var toc = $("#toc").tocify({
+              selectors: "h2,h3"
+            }).data("toc-tocify");
+
+            prettyPrint();
+            $(".optionName").popover({ trigger: "hover" });
+
+        });
+    </script>
+
+  </body>
+</html>

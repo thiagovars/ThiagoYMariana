@@ -1,0 +1,56 @@
+body{
+	color:#636063;
+}
+.btn-primary,
+.btn-primary.btn-bordered:focus,
+.btn-primary.btn-bordered:hover,
+.btn-primary.btn-bordered:active,
+.btn-primary.btn-bordered:active:focus,
+.btn-primary.btn-bordered.active{
+	background:#6a5674;
+	border:solid 2px #6a5674;
+	color:#fff;
+}
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary.active,
+.btn-primary.btn-bordered{
+	background:none;
+	border:solid 2px #6a5674;
+	color:#6a5674;
+}
+.date span{
+	border-bottom:solid 2px #6a5674;
+}
+.title span{
+	border-color: #6a5674 -moz-use-text-color -moz-use-text-color;
+}
+.title-block .divider {
+    border-bottom: solid 2px #6a5674;
+}
+.social-icons a{
+	border: 4px solid #636063;
+	background: #636063;
+}
+.social-icons a:hover{
+	color:#fff;
+	border: 4px solid #6a5674;
+	background: #6a5674;
+}
+.bg-color-1,.timeline > li > .timeline-badge,.timeline > li > .timeline-end > .timeline-badge {
+	background-color: #6a5674;
+}
+.circle,.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #6a5674;
+}
+#ajaxForm .form-control:focus {
+    border-color:#6a5674;
+}
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .txt-color-1,.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:focus,.navbar-default .navbar-nav > .active > a:hover,section#frase i,.final-frase span,#ajaxForm label.checkbox-button:hover,#ajaxForm input[type="checkbox"]:checked + label.checkbox-button{
+    color: #6a5674;
+}
+a,a:hover{
+	color: #6a5674;
+}
