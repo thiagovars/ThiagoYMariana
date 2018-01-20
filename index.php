@@ -541,27 +541,27 @@ require_once('inc/traduc.php'); ?>
 
     <!-- START: scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
     <!-- Bootstrap main Js File-->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     
     <!-- Sticky Navbar -->
-    <script type="text/javascript" src="js/jquery.sticky.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <script type="text/javascript" src="../js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="../js/jquery.nav.js"></script>
     <!-- owl-carousel -->
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="../libs/owl-carousel/owl.carousel.min.js"></script>
     <!-- Stellar -->
-    <script src="libs/stellar/jquery.stellar.min.js"></script>
+    <script src="../libs/stellar/jquery.stellar.min.js"></script>
     <!-- TimeCircles-countdown -->
-    <script src="libs/TimeCircles-countdown/TimeCircles.js"></script>
+    <script src="../libs/TimeCircles-countdown/TimeCircles.js"></script>
     <!-- gallery-grid -->
-    <script src="libs/gallery-grid/gallery-grid.js"></script>
+    <script src="../libs/gallery-grid/gallery-grid.js"></script>
     <!-- Magnific Popup core JS file -->
-	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="../libs/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Bootstrap Validator -->
-    <script src="libs/bootstrap-validator/validator.min.js"></script>
+    <script src="../libs/bootstrap-validator/validator.min.js"></script>
 	<!-- Theme Main Js file -->
-	<script src="js/theme-main.js"></script>
+	<script src="../js/theme-main.js"></script>
     <!-- END: scripts -->
 
 
