@@ -7,8 +7,13 @@ class Helper {
 		return Terms::getTerms(self::getLanguage(), $string);
 	}
 
-	static function traducMes($string, $curto) {
+	static function traducMes($string, $curto = false) {
 		return Terms::getMes(self::getLanguage(), $string, $curto);
+	}
+
+	static function traduzir($slug = '') {
+		if (empty($slug)) { return false; }
+		return Terms::traducText(self::getLanguage(), $slug);
 	}
 
 	static function getLanguage() {

@@ -200,12 +200,14 @@ require_once('inc/traduc.php'); ?>
                   <div class="timeline-badge"><i class="fa fa-heart" aria-hidden="true"></i></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h2 class="timeline-title"><span>Enero</span> 2016</h2>
+                      <h2 class="timeline-title"><span><?php echo Helper::traducMes('janeiro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
                       <img src="../img/story/story-img-01.jpg" class="img-responsive" alt="Our Story"/>
-                      <h2 class="timeline-title">Comienza nuestro viaje...</h2>
-                      <p>Todo se inicia en un día cualquiera, de un año cualquiera, pero de una forma atípica: a los golpes. El kendo fue el responsable de nuestro primer encuentro. A pesar de la distancia que nos separaba, el vínculo que habíamos creado se hacía cada vez más fuerte. Finalmente, un 29 de enero pudimos entender qué sentíamos el uno por el otro. De esta forma nos prometimos intentar el "nosotros" a pesar de las fronteras. </p>
+                      <h2 class="timeline-title"><?php echo Helper::traduc('começa a viagem...'); ?></h2>
+                      <p> <?php echo Helper::traduzir('o começo');
+                           ?>
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -213,12 +215,12 @@ require_once('inc/traduc.php'); ?>
                   <div class="timeline-badge"><i class="fa fa-heart" aria-hidden="true"></i></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h2 class="timeline-title"><span>Setiembre</span> 2016</h2>
+                      <h2 class="timeline-title"><span><?php echo Helper::traducMes('setembro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
                       <img src="../img/story/story-img-02.jpg" class="img-responsive" alt="Our Story"/>
-                      <h2 class="timeline-title">Vientos de Primavera.</h2>
-                      <p>Tras meses yendo y viniendo, de pelear contra el tiempo y los kilómetros; en una tarde de setiembre, simplemente todo cambió. Cuando alguien se siente muy unido al otro, la euforia de los encuentros y el vacío tras la separación, pueden jugar malas pasadas. Así que nos propusimos un nuevo objetivo: no dejaríamos que el año terminara con "nosotros" a distancia. Ahora la promesa, se volvió un pacto.</p>
+                      <h2 class="timeline-title"><?php echo Helper::traduc('ventos de primavera'); ?></h2>
+                      <p><?php echo Helper::traduzir('ventos primaverais') ?></p>
                     </div>
                   </div>
                 </li>
@@ -226,7 +228,7 @@ require_once('inc/traduc.php'); ?>
                   <div class="timeline-badge"><i class="fa fa-heart" aria-hidden="true"></i></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h2 class="timeline-title"> <span>Diciembre</span> 2016</h2>
+                      <h2 class="timeline-title"> <span><?php echo Helper::traducMes('dezembro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
                       <img src="../img/story/story-img-03.jpg" class="img-responsive" alt="Our Story"/>
@@ -239,7 +241,7 @@ require_once('inc/traduc.php'); ?>
                   <div class="timeline-badge"><i class="fa fa-heart" aria-hidden="true"></i></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h2 class="timeline-title"><span>Enero</span> 2018</h2>
+                      <h2 class="timeline-title"><span><?php echo Helper::traducMes('janeiro'); ?></span> 2018</h2>
                     </div>
                     <div class="timeline-body text-center">
                       <img src="../img/story/story-img-04.jpg" class="img-responsive" alt="Our Story"/>
