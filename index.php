@@ -130,7 +130,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Thiago <span>da Silveira</span></h2>
-                        <img src="../img/pic-groom.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -146,7 +146,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Mariana <span>Gerali</span></h2>
-                        <img src="../img/pic-bride.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -203,7 +203,7 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span>Enero</span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-01.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/DSC_0499.JPG" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Comienza nuestro viaje...</h2>
                       <p>Todo se inicia en un día cualquiera, de un año cualquiera, pero de una forma atípica: a los golpes. El kendo fue el responsable de nuestro primer encuentro. A pesar de la distancia que nos separaba, el vínculo que habíamos creado se hacía cada vez más fuerte. Finalmente, un 29 de enero pudimos entender qué sentíamos el uno por el otro. De esta forma nos prometimos intentar el "nosotros" a pesar de las fronteras. </p>
                     </div>
@@ -216,7 +216,7 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span>Setiembre</span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-02.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/received_10206616443150461.jpeg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Vientos de Primavera.</h2>
                       <p>Tras meses yendo y viniendo, de pelear contra el tiempo y los kilómetros; en una tarde de setiembre, simplemente todo cambió. Cuando alguien se siente muy unido al otro, la euforia de los encuentros y el vacío tras la separación, pueden jugar malas pasadas. Así que nos propusimos un nuevo objetivo: no dejaríamos que el año terminara con "nosotros" a distancia. Ahora la promesa, se volvió un pacto.</p>
                     </div>
@@ -229,7 +229,7 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"> <span>Diciembre</span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-03.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/20170508_223935.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Año nuevo, vida nueva.</h2>
                       <p>Desde aquel setiembre, cada día que pasaba, se volvía certeza, y no veíamos la hora de cumplir con nuestro pacto... Finalmente, diciembre llegó, y con él, no sólo el cambio de año, sino de vida. No existían ya dudas ni miedos. Bastó con un pasaje de ida, que hasta ahora no tiene retorno.</p>
                     </div>
@@ -256,7 +256,7 @@ require_once('inc/traduc.php'); ?>
             </ul>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-                	<div class="final-frase">Y ahora daremos nuestro <span>siguiente paso...</span></div>
+                	<div class="final-frase">Por eso daremos nuestro <span>siguiente paso...</span></div>
                 </div>
             </div>
         </div>
