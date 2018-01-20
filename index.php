@@ -269,7 +269,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
                     	
-                        <h2>Counting the minutes for the big day!</h2>
+                        <h2>¡Contando los minutos para el gran día!</h2>
                         
                         <!-- Countdown -->
 						<div class="countdown" data-date="2018-08-23 00:00:00"></div>
@@ -287,7 +287,7 @@ require_once('inc/traduc.php'); ?>
                     <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('galeria'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em>Dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</em></p>
+                        <p><em> Recuerdos fotográficos de nuestro tiempo juntos.</em></p>
                         <div class="gallery_nav">
                             <button class="btn btn-primary btn-bordered filter-button active" data-filter="all">All</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-family">Family</button>
