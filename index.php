@@ -130,7 +130,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Thiago <span>da Silveira</span></h2>
-                        <img src="../img/pic-groom.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -146,7 +146,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Mariana <span>Gerali</span></h2>
-                        <img src="../img/pic-bride.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -203,11 +203,9 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span><?php echo Helper::traducMes('janeiro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-01.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/DSC_0499.JPG" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('começa a viagem...'); ?></h2>
-                      <p> <?php echo Helper::traduzir('o começo');
-                           ?>
-                      </p>
+                      <p> <?php echo Helper::traduzir('o começo');?></p>
                     </div>
                   </div>
                 </li>
@@ -218,7 +216,7 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span><?php echo Helper::traducMes('setembro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-02.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/received_10206616443150461.jpeg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('ventos de primavera'); ?></h2>
                       <p><?php echo Helper::traduzir('ventos primaverais') ?></p>
                     </div>
@@ -231,7 +229,7 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"> <span><?php echo Helper::traducMes('dezembro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-03.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/20170508_223935.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Año nuevo, vida nueva.</h2>
                       <p>Desde aquel setiembre, cada día que pasaba, se volvía certeza, y no veíamos la hora de cumplir con nuestro pacto... Finalmente, diciembre llegó, y con él, no sólo el cambio de año, sino de vida. No existían ya dudas ni miedos. Bastó con un pasaje de ida, que hasta ahora no tiene retorno.</p>
                     </div>
@@ -258,7 +256,7 @@ require_once('inc/traduc.php'); ?>
             </ul>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-                	<div class="final-frase">Y ahora daremos nuestro <span>siguiente paso...</span></div>
+                	<div class="final-frase">Por eso daremos nuestro <span>siguiente paso...</span></div>
                 </div>
             </div>
         </div>
@@ -271,7 +269,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
                     	
-                        <h2>Counting the minutes for the big day!</h2>
+                        <h2>¡Contando los minutos para el gran día!</h2>
                         
                         <!-- Countdown -->
 						<div class="countdown" data-date="2018-08-23 00:00:00"></div>
@@ -289,7 +287,7 @@ require_once('inc/traduc.php'); ?>
                     <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('galeria'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em>Dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</em></p>
+                        <p><em> Recuerdos fotográficos de nuestro tiempo juntos.</em></p>
                         <div class="gallery_nav">
                             <button class="btn btn-primary btn-bordered filter-button active" data-filter="all">All</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-family">Family</button>
