@@ -7,6 +7,10 @@ class Helper {
 		return Terms::getTerms(self::getLanguage(), $string);
 	}
 
+	static function traducMes($string, $curto) {
+		return Terms::getMes(self::getLanguage(), $string, $curto);
+	}
+
 	static function getLanguage() {
 		return (empty($_REQUEST['language'])) ? 'pt' : $_REQUEST['language'];
 	}

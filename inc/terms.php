@@ -52,7 +52,7 @@ class Terms {
 
 	}
 
-	static function traducMes($mes, $curto) {
+	static function getMes($language, $string, $curto) {
 		$mes = array(
 			'pt' => array(
 				'janeiro'                => 'Janeiro',
@@ -83,6 +83,6 @@ class Terms {
 				'dezembro'               => 'Diciembre',
 			),
 		);
-		return ($curto) ? substr($mes[$language][$mes], 0, 3)
+		return ($curto) ? substr($mes[$language][$string], 0, 3) : $mes[$language][$string];
 	}
 }
