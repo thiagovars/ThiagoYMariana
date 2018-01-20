@@ -7,38 +7,38 @@ require_once('inc/traduc.php'); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Marttinda Silveira - MachiMorales">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bodas - HTML Wedding Template</title>
+    <title><?php echo Helper::traduc('title-main') ?></title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
     <!-- TimeCircles-countdown -->
-    <link rel="stylesheet" href="libs/TimeCircles-countdown/TimeCircles.css">
+    <link rel="stylesheet" href="../libs/TimeCircles-countdown/TimeCircles.css">
 
     <!-- Owl stylesheet -->
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="../libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="../libs/owl-carousel/owl.theme.css">
 
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="../libs/magnific-popup/magnific-popup.css">
 
     <!-- Loading Rolling -->
-    <link rel="stylesheet" href="libs/loading/rolling.css">
+    <link rel="stylesheet" href="../libs/loading/rolling.css">
 
     <!-- Fonts -->
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,700italic,600italic,800italic'>
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
 
     <!-- Theme Main Style -->
-    <link rel="stylesheet" href="css/theme-style.css">
+    <link rel="stylesheet" href="../css/theme-style.css">
     
     <!--========================Color Variant====================-->
-    <link rel="stylesheet" type="text/css" href="css/colors/pink.css">
+    <link rel="stylesheet" type="text/css" href="../css/colors/pink.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,8 +65,8 @@ require_once('inc/traduc.php'); ?>
         <div class="container">
         	<div class="row">
                 <div class="col-xs-12">
-                    <a href="/pt">PORTUGUÊS</a> | 
-                    <a href="/es">ESPAÑOL</a>
+                    <a href="/thiagoymariana/pt/">PORTUGUÊS</a> | 
+                    <a href="/thiagoymariana/es/">ESPAÑOL</a>
                 	<h3 class="title"><span></span><?php echo Helper::traduc('nos casamos'); ?>
                     <span></span></h3>
                     <ul class="names">
@@ -74,7 +74,7 @@ require_once('inc/traduc.php'); ?>
                         <li class="circle">&amp;</li>
                         <li>Mariana</li>
                     </ul>
-                    <div class="date">Nov <span>24</span> 2018</div>
+                    <div class="date"><?php echo Helper::traducMes('novembro', true) ?> <span>24</span> 2018</div>
                     <div class="hour">21:00 <span>pm</span></div>
                     <div class="place">
                     	<h3><?php echo Helper::traduc('salão festas e eventos'); ?></h3>
@@ -130,7 +130,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Thiago <span>da Silveira</span></h2>
-                        <img src="img/pic-groom.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/pic-groom.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -146,7 +146,7 @@ require_once('inc/traduc.php'); ?>
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Mariana <span>Gerali</span></h2>
-                        <img src="img/pic-bride.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/pic-bride.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
@@ -203,9 +203,15 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span>Enero</span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
+<<<<<<< HEAD
                       <img src="img/story/story-img-01.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Comienza nuestro viaje...</h2>
                       <p>Todo se inicia en un día cualquiera, de un año cualquiera, pero de una forma atípica: a los golpes. El kendo fue el responsable de nuestro primer encuentro. A pesar de la distancia que nos separaba, el vínculo que habíamos creado se hacía cada vez más fuerte. Finalmente, un 29 de enero pudimos entender qué sentíamos el uno por el otro. De esta forma nos prometimos intentar el "nosotros" a pesar de las fronteras. </p>
+=======
+                      <img src="../img/story/story-img-01.jpg" class="img-responsive" alt="Our Story"/>
+                      <h2 class="timeline-title">Our first meeting</h2>
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+>>>>>>> 57c3807599ffcbfbc20814ec11af679510b78ee5
                     </div>
                   </div>
                 </li>
@@ -216,9 +222,15 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span>Setiembre</span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
+<<<<<<< HEAD
                       <img src="img/story/story-img-02.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Vientos de Primavera.</h2>
                       <p>Tras meses yendo y viniendo, de pelear contra el tiempo y los kilómetros; en una tarde de setiembre, simplemente todo cambió. Cuando alguien se siente muy unido al otro, la euforia de los encuentros y el vacío tras la separación, pueden jugar malas pasadas. Así que nos propusimos un nuevo objetivo: no dejaríamos que el año terminara con "nosotros" a distancia. Ahora la promesa, se volvió un pacto.</p>
+=======
+                      <img src="../img/story/story-img-02.jpg" class="img-responsive" alt="Our Story"/>
+                      <h2 class="timeline-title">Great witer days</h2>
+                      <p>Mussum ipsum cacilds, vidis litro abertis.  Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt,Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis .</p>
+>>>>>>> 57c3807599ffcbfbc20814ec11af679510b78ee5
                     </div>
                   </div>
                 </li>
@@ -229,9 +241,15 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"> <span>Diciembre</span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
+<<<<<<< HEAD
                       <img src="img/story/story-img-03.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Año nuevo, vida nueva.</h2>
                       <p>Desde aquel setiembre, cada día que pasaba, se volvía certeza, y no veíamos la hora de cumplir con nuestro pacto... Finalmente, diciembre llegó, y con él, no sólo el cambio de año, sino de vida. No existían ya dudas ni miedos. Bastó con un pasaje de ida, que hasta ahora no tiene retorno.</p>
+=======
+                      <img src="../img/story/story-img-03.jpg" class="img-responsive" alt="Our Story"/>
+                      <h2 class="timeline-title">Trip to caribbean</h2>
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+>>>>>>> 57c3807599ffcbfbc20814ec11af679510b78ee5
                     </div>
                   </div>
                 </li>
@@ -242,9 +260,15 @@ require_once('inc/traduc.php'); ?>
                       <h2 class="timeline-title"><span>Enero</span> 2018</h2>
                     </div>
                     <div class="timeline-body text-center">
+<<<<<<< HEAD
                       <img src="img/story/story-img-04.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title">Tiempo circular.</h2>
                       <p>Hay personas que creen en las coincidencias. Enero es nuestra hermosa coincidencia. En enero se inició nuestro amor, en enero dejamos atrás la distancia, y ahora, en enero, decidimos que queremos que el "nosotros" perdure en el tiempo. </p>
+=======
+                      <img src="../img/story/story-img-04.jpg" class="img-responsive" alt="Our Story"/>
+                      <h2 class="timeline-title">Autumn love</h2>
+                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+>>>>>>> 57c3807599ffcbfbc20814ec11af679510b78ee5
                     </div>
                   </div>
                 </li>
@@ -301,56 +325,56 @@ require_once('inc/traduc.php'); ?>
             <div class="row gallery-popup">
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family">
-	                <a href="img/gallery/gallery-image-01.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-01.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-01.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-01.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-friends">
-	                <a href="img/gallery/gallery-image-02.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-02.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-02.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-02.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family">
-	                <a href="img/gallery/gallery-image-03.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-03.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-03.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-03.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="img/gallery/gallery-image-04.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-04.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-04.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-04.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips">
-	                <a href="img/gallery/gallery-image-05.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-05.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-05.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-05.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="img/gallery/gallery-image-06.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-06.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-06.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-06.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips">
-	                <a href="img/gallery/gallery-image-07.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-07.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-07.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-07.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="img/gallery/gallery-image-08.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-08.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-08.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-08.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="img/gallery/gallery-image-09.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="img/gallery/gallery-image-09.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/gallery/gallery-image-09.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/gallery/gallery-image-09.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 	        </div>
@@ -373,7 +397,7 @@ require_once('inc/traduc.php'); ?>
             <div class="row">
                 <div class="col-sm-6 col-xs-12">
                     <div class="featured">
-                        <img src="img/featured/featured-01.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/featured/featured-01.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <div class="text">
                             <h2>Mark Gamberther</h2>
                             <h4><span><em>Best Man</em></span></h4>
@@ -382,7 +406,7 @@ require_once('inc/traduc.php'); ?>
                     </div>
                     <div class="clearfix"></div>
                     <div class="featured">
-                        <img src="img/featured/featured-03.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/featured/featured-03.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <div class="text">
                             <h2>Pablo Ibañez</h2>
                             <h4><span><em>Groomsman</em></span></h4>
@@ -391,7 +415,7 @@ require_once('inc/traduc.php'); ?>
                     </div>
                     <div class="clearfix"></div>
                     <div class="featured">
-                        <img src="img/featured/featured-04.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/featured/featured-04.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <div class="text">
                             <h2>Donald Bessue</h2>
                             <h4><span><em>Groomsman</em></span></h4>
@@ -401,7 +425,7 @@ require_once('inc/traduc.php'); ?>
                 </div>
                 <div class="col-sm-6 col-xs-12 featured-right">
                    <div class="featured">
-                        <img src="img/featured/featured-02.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/featured/featured-02.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <div class="text">
                             <h2>Christine Doe</h2>
                             <h4><span><em>Maid of honor</em></span></h4>
@@ -410,7 +434,7 @@ require_once('inc/traduc.php'); ?>
                     </div>
                     <div class="clearfix"></div>
                     <div class="featured">
-                        <img src="img/featured/featured-05.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/featured/featured-05.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <div class="text">
                             <h2>Samantha Markesh</h2>
                             <h4><span><em>Bridesmaid</em></span></h4>
@@ -419,7 +443,7 @@ require_once('inc/traduc.php'); ?>
                     </div>
                     <div class="clearfix"></div>
                     <div class="featured">
-                        <img src="img/featured/featured-06.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/featured/featured-06.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <div class="text">
                             <h2>Kesha Martinez</h2>
                             <h4><span><em>Bridesmaid</em></span></h4>
@@ -443,14 +467,14 @@ require_once('inc/traduc.php'); ?>
                         <p><em>We are registered at the following shops with our names.</em></p>
                     </div>
                     <div id="owl-logo"> 
-                      <div class="item"><img src="img/gifts-logos/gift-logo-01.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-02.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-03.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-04.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-05.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-06.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-07.png" alt="Owl Image"></div>
-                      <div class="item"><img src="img/gifts-logos/gift-logo-08.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-01.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-02.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-03.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-04.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-05.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-06.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-07.png" alt="Owl Image"></div>
+                      <div class="item"><img src="../img/gifts-logos/gift-logo-08.png" alt="Owl Image"></div>
                     </div>
                 </div>
             </div>
