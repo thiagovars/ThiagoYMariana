@@ -272,7 +272,7 @@ require_once('inc/traduc.php'); ?>
                         <h2>¡Contando los minutos para el gran día!</h2>
                         
                         <!-- Countdown -->
-						<div class="countdown" data-date="2018-08-23 00:00:00"></div>
+						<div class="countdown" data-date="2018-11-24 21:00:00"></div>
                 </div>
             </div>
         </div>
