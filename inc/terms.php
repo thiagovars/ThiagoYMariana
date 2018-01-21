@@ -7,32 +7,17 @@
  * a partir do arquivo traduc.php que amarra tudo na interface
  * O arquivo chamado é o arquivo traduc.php
  *
+ * Objeto $db é necessário para recuperar o corpo dos textos traduzidos
  * @author Pedro Silveira <thiagovars@gmail.com>
  */
+
+require_once('class/texts.php');
+
 class Terms {
 
-	static function traducText($language, $slug) {
-		$oComecoPT = 'Tudo começa em um dia qualquer, de um ano qualquer, mas de uma forma atípica: a golpes. O kendo
-			foi o responsável pelo nosso primeiro encontro. A pesar da distância que nos separava, o vínculo que haviamos criado
-			tornava-se cada vez mais forte. Finalmente, em um 29 de janeiro pudemos entender o que sentiamos um pelo outro. Dessa
-			forma prometemos tentar o "nós dois" apesar das fronteiras.';
-		$oComecoES = 'Todo se in icia en un día cualquiera, de un año cualquiera, pero de una forma atípica: a los golpes. El kendo fue el responsable de nuestro primer encuentro. A pesar de la distancia que nos separaba, el vínculo que habíamos creado se hacía cada vez más fuerte. Finalmente, un 29 de enero pudimos entender qué sentíamos el uno por el otro. De esta forma nos prometimos intentar el "nosotros" a pesar de las fronteras.';
-		$ventosPT = 'A meses indo e vindo, lutando contra o tempo e vencendo os quilômetros, foi em uma tarde de setembro que tudo
-			mudou. Quando alguém se sente muito unido ao outro, a euforia dos encontros e o vazio da separação, podem jogar fardos
-			pesados. E assim nos propusemos um novo objetivo: não deixar que o ano terminasse com o "nós dois" à distância. Agora a
-			promessa se converteu em pacto.';
-		$ventosES = 'Tras meses yendo y viniendo, de pelear contra el tiempo y los kilómetros; en una tarde de setiembre, simplemente todo cambió. Cuando alguien se siente muy unido al otro, la euforia de los encuentros y el vacío tras la separación, pueden jugar malas pasadas. Así que nos propusimos un nuevo objetivo: no dejaríamos que el año terminara con "nosotros" a distancia. Ahora la promesa, se volvió un pacto.';
-		$text = array(
-			'pt' => array(
-				'o começo' => $oComecoPT,
-				'ventos primaverais' => $ventosPT,
-			),
-			'es' => array(
-				'o começo' => $oComecoES,
-				'ventos primaverais' => $ventosES,
-			),
-		);
-		return $text[$language][$slug];
+	static function traducText($slug, $language) {
+		$db = new Texts();
+		return $db->getText($slug, $language);
 	}
 
 	static function getMes($language, $string, $curto = false) {
@@ -87,6 +72,10 @@ class Terms {
 				'comparecer?'            => 'Você vai aparecer?',
 				'começa a viagem...'     => 'Começa nossa viagem...',
 				'ventos de primavera'    => 'Ventos Primaverais.',
+				'ano novo, vida nova'    => 'Ano novo, vida nova.',
+				'tempo circular'         => 'Tiempo circular.',
+				'por isso daremos'       => 'Por isso daremos nosso',
+				'próximo passo'          => 'próximo passo',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -104,6 +93,10 @@ class Terms {
 				'comparecer?'            => '?Vos vas a venir?',
 				'começa a viagem...'     => 'Comienza nuestro viaje...',
 				'ventos de primavera'    => 'Vientos de Primavera.',
+				'ano novo, vida nova'    => 'Año nuevo, vida nueva.',
+				'tempo circular'         => 'Tiempo circular.',
+				'por isso daremos'       => 'Por eso daremos nuestro',
+				'próximo passo'          => 'siguiente paso',
 			)
 		);
 		return $terms[$langeuage][$string];

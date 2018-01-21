@@ -1,5 +1,6 @@
 <?php 
-require_once('inc/traduc.php'); ?>
+require_once('inc/traduc.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -205,7 +206,7 @@ require_once('inc/traduc.php'); ?>
                     <div class="timeline-body text-center">
                       <img src="../img/Fotoshistoria/DSC_0499.JPG" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('começa a viagem...'); ?></h2>
-                      <p> <?php echo Helper::traduzir('o começo');?></p>
+                      <p> <?php echo Helper::traduzir('tudo começa em');?></p>
                     </div>
                   </div>
                 </li>
@@ -218,7 +219,7 @@ require_once('inc/traduc.php'); ?>
                     <div class="timeline-body text-center">
                       <img src="../img/Fotoshistoria/received_10206616443150461.jpeg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('ventos de primavera'); ?></h2>
-                      <p><?php echo Helper::traduzir('ventos primaverais') ?></p>
+                      <p><?php echo Helper::traduzir('a meses indo') ?></p>
                     </div>
                   </div>
                 </li>
@@ -230,8 +231,8 @@ require_once('inc/traduc.php'); ?>
                     </div>
                     <div class="timeline-body text-center">
                       <img src="../img/Fotoshistoria/20170508_223935.jpg" class="img-responsive" alt="Our Story"/>
-                      <h2 class="timeline-title">Año nuevo, vida nueva.</h2>
-                      <p>Desde aquel setiembre, cada día que pasaba, se volvía certeza, y no veíamos la hora de cumplir con nuestro pacto... Finalmente, diciembre llegó, y con él, no sólo el cambio de año, sino de vida. No existían ya dudas ni miedos. Bastó con un pasaje de ida, que hasta ahora no tiene retorno.</p>
+                      <h2 class="timeline-title"><?php echo Helper::traduc('ano novo, vida nova'); ?></h2>
+                      <p><?php echo Helper::traduzir('desde aquele setembro'); ?></p>
                     </div>
                   </div>
                 </li>
@@ -243,8 +244,8 @@ require_once('inc/traduc.php'); ?>
                     </div>
                     <div class="timeline-body text-center">
                       <img src="../img/story/story-img-04.jpg" class="img-responsive" alt="Our Story"/>
-                      <h2 class="timeline-title">Tiempo circular.</h2>
-                      <p>Hay personas que creen en las coincidencias. Enero es nuestra hermosa coincidencia. En enero se inició nuestro amor, en enero dejamos atrás la distancia, y ahora, en enero, decidimos que queremos que el "nosotros" perdure en el tiempo. </p>
+                      <h2 class="timeline-title"><?php echo Helper::traduc('tempo circular'); ?></h2>
+                      <p><?php echo Helper::traduzir('existem pessoas que'); ?></p>
                     </div>
                   </div>
                 </li>
@@ -256,7 +257,7 @@ require_once('inc/traduc.php'); ?>
             </ul>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-                	<div class="final-frase">Por eso daremos nuestro <span>siguiente paso...</span></div>
+                	<div class="final-frase"><?php echo Helper::traduc('por isso daremos'); ?> <span><?php echo Helper::traduc('próximo passo') ?>...</span></div>
                 </div>
             </div>
         </div>

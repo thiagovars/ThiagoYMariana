@@ -13,7 +13,7 @@ class Helper {
 
 	static function traduzir($slug = '') {
 		if (empty($slug)) { return false; }
-		return Terms::traducText(self::getLanguage(), $slug);
+		return Terms::traducText($slug, self::getLanguage());
 	}
 
 	static function getLanguage() {
