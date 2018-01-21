@@ -441,18 +441,9 @@ require_once('inc/traduc.php');
                 	<div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('caixinha'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em>We are registered at the following shops with our names.</em></p>
+                        <p><em> Abitab Número de Cuenta </em></p>
                     </div>
-                    <div id="owl-logo"> 
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-01.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-02.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-03.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-04.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-05.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-06.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-07.png" alt="Owl Image"></div>
-                      <div class="item"><img src="../img/gifts-logos/gift-logo-08.png" alt="Owl Image"></div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -465,9 +456,9 @@ require_once('inc/traduc.php');
         	<div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
                 	<div class="title-block">
-                        <h1>Are You <span><em>Attending?</em></span></h1>
+                        <h1>¿Quiere confirmar <span><em>asistencia?</em></span></h1>
                         <div class="divider"></div>
-                        <p><em>Please select the events you are going to attend, and fill the following form with to confirm.</em></p>
+                        <p><em>Por favor, a continuación complete la planilla de asistencia, indicando los invitados que asistirán y si desea menú vegano.</em></p>
                     </div>
                     
                 </div>
@@ -515,7 +506,7 @@ require_once('inc/traduc.php');
                         </div>
                     </form>
                     
-                    <button class="btn btn-primary btn-lg" id="ajaxFormSubmit">I´m Attending</button>
+                    <button class="btn btn-primary btn-lg" id="ajaxFormSubmit">Asistiré</button>
             	</div>
             </div>
         </div>
@@ -527,9 +518,9 @@ require_once('inc/traduc.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
-					<h1>Obrigado! - ¡Gracias!</h1>
+					<h1>¡Gracias!</h1>
                     <ul class="names">
-                    	<li>Thiago</li>
+                    	<li>&nbsp;&nbsp;Thiago</li>
                         <li class="circle">&amp;</li>
                         <li>Mariana</li>
                     </ul>
