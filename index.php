@@ -192,7 +192,7 @@ require_once('inc/traduc.php');
                 	<div class="title-block">
                         <h1><?php echo Helper::traduc('nossa') ?> <span><em><?php echo Helper::traduc('história'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em>Dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</em></p>
+                        <p><em> Breve relato de viajes, horas y distancias, y con un hermoso final. ¿O comienzo?.</em></p>
                     </div>
                 </div>
             </div>
