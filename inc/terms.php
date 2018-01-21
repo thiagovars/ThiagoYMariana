@@ -73,9 +73,13 @@ class Terms {
 				'começa a viagem...'     => 'Começa nossa viagem...',
 				'ventos de primavera'    => 'Ventos Primaverais.',
 				'ano novo, vida nova'    => 'Ano novo, vida nova.',
-				'tempo circular'         => 'Tiempo circular.',
+				'tempo circular'         => 'Tempo circular.',
 				'por isso daremos'       => 'Por isso daremos nosso',
 				'próximo passo'          => 'próximo passo',
+				'contando os minutos'    => 'Contando os minutos para o grande dia!',
+				'recordações em foto'    => 'Memória em foto de nosso tempo juntos.',
+				'quer confirmar'         => 'Quer confirmar',
+				'presença'               => 'presença',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -97,6 +101,10 @@ class Terms {
 				'tempo circular'         => 'Tiempo circular.',
 				'por isso daremos'       => 'Por eso daremos nuestro',
 				'próximo passo'          => 'siguiente paso',
+				'contando os minutos'    => '¡Contando los minutos para el gran día!',
+				'recordações em foto'    => 'Recuerdos fotográficos de nuestro tiempo juntos.',
+				'quer confirmar'         => '¿Quiere confirmar',
+				'presença'               => 'asistencia?',
 			)
 		);
 		return $terms[$langeuage][$string];

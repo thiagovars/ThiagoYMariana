@@ -270,7 +270,7 @@ require_once('inc/traduc.php');
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
                     	
-                        <h2>¡Contando los minutos para el gran día!</h2>
+                        <h2><?php echo Helper::traduc('contando os minutos') ?></h2>
                         
                         <!-- Countdown -->
 						<div class="countdown" data-date="2018-11-24 21:00:00"></div>
@@ -288,7 +288,7 @@ require_once('inc/traduc.php');
                     <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('galeria'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em> Recuerdos fotográficos de nuestro tiempo juntos.</em></p>
+                        <p><em><?php echo Helper::traduc('recordações em foto'); ?></em></p>
                         <div class="gallery_nav">
                             <button class="btn btn-primary btn-bordered filter-button active" data-filter="all">All</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-family">Family</button>
@@ -456,9 +456,9 @@ require_once('inc/traduc.php');
         	<div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
                 	<div class="title-block">
-                        <h1>¿Quiere confirmar <span><em>asistencia?</em></span></h1>
+                        <h1><?php echo Helper::traduc('quer confirmar'); ?> <span><em><?php echo Helper::traduc('presença'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em>Por favor, a continuación complete la planilla de asistencia, indicando los invitados que asistirán y si desea menú vegano.</em></p>
+                        <p><em><?php echo Helper::traduzir('por favor,'); ?></em></p>
                     </div>
                     
                 </div>
