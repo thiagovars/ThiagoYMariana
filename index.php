@@ -192,7 +192,7 @@ require_once('inc/traduc.php');
                 	<div class="title-block">
                         <h1><?php echo Helper::traduc('nossa') ?> <span><em><?php echo Helper::traduc('história'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em> Breve relato de viajes, horas y distancias, y con un hermoso final. ¿O comienzo?.</em></p>
+                        <p><em><?php echo Helper::traduzir('breve relato de'); ?></em></p>
                     </div>
                 </div>
             </div>
@@ -289,13 +289,13 @@ require_once('inc/traduc.php');
                         <h1><span><em><?php echo Helper::traduc('galeria'); ?></em></span></h1>
                         <div class="divider"></div>
                         <p><em><?php echo Helper::traduc('recordações em foto'); ?></em></p>
-                        <div class="gallery_nav">
+                        <!-- <div class="gallery_nav">
                             <button class="btn btn-primary btn-bordered filter-button active" data-filter="all">All</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-family">Family</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-friends">Friends</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-trips">Trips</button>
                             <button class="btn btn-primary btn-bordered filter-button" data-filter="gallery-portraits">Portraits</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -465,7 +465,7 @@ require_once('inc/traduc.php');
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
 
                     <form id="ajaxForm" data-toggle="validator">
-                        <div class="row bot-mrg-20">
+                        <!-- <div class="row bot-mrg-20">
 			                <div class="col-md-4 text-center">
                                 <input type="checkbox" id="checkbox-1" name="events[]" value="Pre-Wedding Dinner">
                                 <label for="checkbox-1" class="checkbox-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Pre-Wedding Dinner</label>
@@ -481,17 +481,17 @@ require_once('inc/traduc.php');
                                 <label for="checkbox-3" class="checkbox-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Party</label>
                                 <p>Victory Gardens Hall, 11 Grant Ave. Carteret NJ 9851 (732) 841-45 90, (732) 634-13 86 info@emailname.com</p>
                             </div>
-			            </div>
+			            </div> -->
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" name="name" placeholder="<?php echo Helper::traduc('seu nome'); ?>" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                                    <input type="email" class="form-control" name="email" placeholder="<?php echo Helper::traduc('seu e-mail'); ?>" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -499,14 +499,14 @@ require_once('inc/traduc.php');
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea rows="5" class="form-control" name="message" placeholder="Write your message...​" required></textarea>
+                                    <textarea rows="5" class="form-control" name="message" placeholder="<?php echo Helper::traduc('sua mensagem') ?>​" required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                         </div>
                     </form>
                     
-                    <button class="btn btn-primary btn-lg" id="ajaxFormSubmit">Asistiré</button>
+                    <button class="btn btn-primary btn-lg" id="ajaxFormSubmit"><?php echo Helper::traduc('confirmar') ?></button>
             	</div>
             </div>
         </div>
@@ -518,7 +518,7 @@ require_once('inc/traduc.php');
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
-					<h1>¡Gracias!</h1>
+					<h1><?php echo Helper::traduc('obrigado'); ?></h1>
                     <ul class="names">
                     	<li>&nbsp;&nbsp;Thiago</li>
                         <li class="circle">&amp;</li>
