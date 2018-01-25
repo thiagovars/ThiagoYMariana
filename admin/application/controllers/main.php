@@ -4,7 +4,11 @@ class Main extends Controller {
 	
 	function index()
 	{
-		$template = $this->loadView('inicio');
+		$session = $this->loadHelper('session_helper');
+		if (empty($session->get('user'))) {
+			$this->redirect('/auth');
+		}
+		$template = $this->loadView('main');
 		$template->render();
 	}
     

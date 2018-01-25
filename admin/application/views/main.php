@@ -34,7 +34,7 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-5.jpg">
 
     <!--
 
@@ -50,12 +50,12 @@
 
             <ul class="nav">
                 <li class="active">
-                    <a href="index.html">
-                        <i class="pe-7s-graph"></i>
-                        <p>Dashboard</p>
+                    <a href="invitados">
+                        <i class="pe-7s-note2"></i>
+                        <p>Lista de invitados</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="user.html">
                         <i class="pe-7s-user"></i>
                         <p>User Profile</p>
@@ -96,7 +96,7 @@
                         <i class="pe-7s-rocket"></i>
                         <p>Upgrade to PRO</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
     	</div>
     </div>
