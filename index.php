@@ -302,56 +302,56 @@ require_once('inc/traduc.php');
             <div class="row gallery-popup">
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family">
-	                <a href="../img/gallery/gallery-image-01.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-01.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/1.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/1.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-friends">
-	                <a href="../img/gallery/gallery-image-02.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-02.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/2.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/2.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family">
-	                <a href="../img/gallery/gallery-image-03.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-03.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/3.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/3.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="../img/gallery/gallery-image-04.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-04.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/6.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/6.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips">
-	                <a href="../img/gallery/gallery-image-05.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-05.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/8.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/8.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="../img/gallery/gallery-image-06.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-06.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/9.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/9.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips">
-	                <a href="../img/gallery/gallery-image-07.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-07.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/10.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/10.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="../img/gallery/gallery-image-08.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-08.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/11.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/11.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
-	                <a href="../img/gallery/gallery-image-09.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/gallery/gallery-image-09.jpg" class="img-responsive" alt="Gallery image">
+	                <a href="../img/fotos/12.jpg" class="mfp-image" title="Gallery image title">
+	                	<img src="../img/fotos/12.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 	        </div>
