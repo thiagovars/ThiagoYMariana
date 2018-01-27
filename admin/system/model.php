@@ -71,12 +71,6 @@ class Model {
 	public function query($query)
 	{
 		$this->stmt = $this->connection->prepare($query);
-		// $result = mysql_query($qry) or die('MySQL Error: '. mysql_error());
-		// $resultObjects = array();
-
-		// while($row = mysql_fetch_object($result)) $resultObjects[] = $row;
-
-		// return $resultObjects;
 	}
 
 	public function bind($param, $value, $type = null){

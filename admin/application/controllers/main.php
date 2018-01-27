@@ -9,6 +9,7 @@ class Main extends Controller {
 			$this->redirect('/auth');
 		}
 		$template = $this->loadView('main');
+		$template->set('user_name', $session->get('user'));
 		$template->render();
 	}
     

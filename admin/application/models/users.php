@@ -3,12 +3,10 @@
 class Users extends Model {
 
 	public function getAuthentication($user, $passw) {
-		// $resultset = $this->query('SELECT name FROM USERS WHERE LOGIN = \''.$user.'\' AND PASSWORD = \''.$passw.'\'');
-		$resultset = $this->query('select name from users where login = :login and password = :password');
+		$this->query('select user_id, name, salt, password from users where login = :login');
 		$this->bind(':login', utf8_decode($user));
-		$this->bind(':password', utf8_decode($passw));
 		$resultset = $this->single();
-		var_dump($this);
-		return $resultset;
+		$passw .= $resultset['salt'];
+		return (hash('sha512', $passw) == $resultset['password']);
 	}
 }
