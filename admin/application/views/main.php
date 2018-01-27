@@ -191,6 +191,24 @@
                                 <h4 class="title">Orçamento do salão por pessoa</h4>
                                 <p class="category">Cálculo em 3 menus: infantil, vegano e não-vegano</p>
                             </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>#Total</th>
+                                        <th>#não veganos</th>
+                                        <th>#Niños</th>
+                                        <th>#Veganos</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><h2 class="text-danger"><?php echo $total['normal']; ?></h2></td>
+                                            <td><h2 class="text-primary"><?php echo $total['adults']; ?></h2></td>
+                                            <td><h2 class="text-info"><?php echo $total['kids']; ?></h2></td>
+                                            <td><h2 class="text-warning"><?php echo $total['vegans']; ?></h2></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -216,8 +234,8 @@
                                         <tr class="<?php echo $lineClass; ?>">
                                             <td><?php echo $invitado['guest_id']; ?></td>
                                             <td><?php echo utf8_encode($invitado['name']).' '.utf8_encode($invitado['surname']); ?></td>
-                                            <td><?php echo ($invitado['undertwelve']) ? 'sim' : 'não'; ?></td>
-                                            <td><?php echo ($invitado['vegan_menu']) ? 'sim' : 'não'; ?></td>
+                                            <td><i class="fa <?php echo ($invitado['undertwelve']) ? 'fa-check text-success' : 'fa-times text-danger'; ?>"></i></td>
+                                            <td><i class="fa <?php echo ($invitado['vegan_menu']) ? 'fa-check text-success' : 'fa-times text-danger'; ?>"></i></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>

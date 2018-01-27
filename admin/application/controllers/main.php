@@ -12,9 +12,19 @@ class Main extends Controller {
 		$template = $this->loadView('main');
 		$template->set('user_name', $session->get('user'));
 		$template->set('invitados', $guests->getGuests());
+		$totals = $guests->getTotal();
+		$template->set('total', $this->getTotal($totals));
 		$template->render();
 	}
-    
+  
+  function getTotal($totals) {
+  	$sum = 0;
+  	foreach ($totals as $key => $total) {
+  		$sum += $total;
+  	}
+  	$totals['normal'] = $sum;
+  	return $totals;
+  }
 }
 
 ?>
