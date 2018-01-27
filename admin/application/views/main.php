@@ -215,7 +215,7 @@
                                         ?>
                                         <tr class="<?php echo $lineClass; ?>">
                                             <td><?php echo $invitado['guest_id']; ?></td>
-                                            <td><?php echo $invitado['name'].' '.$invitado['surname']; ?></td>
+                                            <td><?php echo utf8_encode($invitado['name']).' '.utf8_encode($invitado['surname']); ?></td>
                                             <td><?php echo ($invitado['undertwelve']) ? 'sim' : 'não'; ?></td>
                                             <td><?php echo ($invitado['vegan_menu']) ? 'sim' : 'não'; ?></td>
                                         </tr>
