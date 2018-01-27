@@ -309,31 +309,31 @@ require_once('inc/traduc.php');
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-friends">
 	                <a href="../img/fotos/2.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/fotos/2.jpg" class="img-responsive" alt="Gallery image">
+	                	<img src="../img/fotos/2copia.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-family">
 	                <a href="../img/fotos/3.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/fotos/3.jpg" class="img-responsive" alt="Gallery image">
+	                	<img src="../img/fotos/3copia.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
 	                <a href="../img/fotos/6.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/fotos/6.jpg" class="img-responsive" alt="Gallery image">
+	                	<img src="../img/fotos/6copia.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-trips">
 	                <a href="../img/fotos/8.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/fotos/8.jpg" class="img-responsive" alt="Gallery image">
+	                	<img src="../img/fotos/8copia.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
 	                <a href="../img/fotos/9.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/fotos/9.jpg" class="img-responsive" alt="Gallery image">
+	                	<img src="../img/fotos/9copia.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 
