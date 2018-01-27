@@ -351,7 +351,7 @@ require_once('inc/traduc.php');
 
 	            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter gallery-portraits">
 	                <a href="../img/fotos/12.jpg" class="mfp-image" title="Gallery image title">
-	                	<img src="../img/fotos/12.jpg" class="img-responsive" alt="Gallery image">
+	                	<img src="../img/fotos/13.jpg" class="img-responsive" alt="Gallery image">
 	                </a>
 	            </div>
 	        </div>
