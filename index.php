@@ -217,7 +217,7 @@ require_once('inc/traduc.php');
                       <h2 class="timeline-title"><span><?php echo Helper::traducMes('setembro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/Fotoshistoria/received_10206616443150461.jpeg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/4.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('ventos de primavera'); ?></h2>
                       <p><?php echo Helper::traduzir('a meses indo') ?></p>
                     </div>
@@ -230,7 +230,7 @@ require_once('inc/traduc.php');
                       <h2 class="timeline-title"> <span><?php echo Helper::traducMes('dezembro'); ?></span> 2016</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/Fotoshistoria/20170508_223935.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/3.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('ano novo, vida nova'); ?></h2>
                       <p><?php echo Helper::traduzir('desde aquele setembro'); ?></p>
                     </div>
