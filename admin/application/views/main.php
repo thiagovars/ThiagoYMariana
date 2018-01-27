@@ -206,39 +206,20 @@
                                     <thead>
                                         <th>#</th>
                                         <th>Name</th>
-                                        <th>Salary</th>
+                                        <th>Niño</th>
+                                        <th>Vegano</th>
                                     </thead>
                                     <tbody>
-                                        <tr class="success">
-                                            <td>1</td>
-                                            <td>Dakota Rice</td>
-                                            <td>$36,738</td>
+                                        <?php foreach ($invitados as $invitado) { 
+                                        $lineClass = ($invitado['confirmed']) ? 'success' : 'normal';    
+                                        ?>
+                                        <tr class="<?php echo $lineClass; ?>">
+                                            <td><?php echo $invitado['guest_id']; ?></td>
+                                            <td><?php echo $invitado['name'].' '.$invitado['surname']; ?></td>
+                                            <td><?php echo ($invitado['undertwelve']) ? 'sim' : 'não'; ?></td>
+                                            <td><?php echo ($invitado['vegan_menu']) ? 'sim' : 'não'; ?></td>
                                         </tr>
-                                        <tr class="info">
-                                            <td>2</td>
-                                            <td>Minerva Hooper</td>
-                                            <td>$23,789</td>
-                                        </tr>
-                                        <tr class="danger">
-                                            <td>3</td>
-                                            <td>Sage Rodriguez</td>
-                                            <td>$56,142</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Philip Chaney</td>
-                                            <td>$38,735</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Doris Greene</td>
-                                            <td>$63,542</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Mason Porter</td>
-                                            <td>$78,615</td>
-                                        </tr>
+                                        <?php } ?>
                                     </tbody>
                                 </table>
 
