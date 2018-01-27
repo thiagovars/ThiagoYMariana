@@ -10,4 +10,8 @@ $config['db_name'] = 'tym_db'; // Database name
 $config['db_username'] = 'root'; // Database username
 $config['db_password'] = ''; // Database password
 
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'tym_db');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 ?>

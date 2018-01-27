@@ -19,8 +19,6 @@ class Texts {
 	}
 
 	public function getText($slug = '', $language) {
-		// $this->database = new db();
-		// $this->database->query('select body from texts where texto_id = 1');
 		$this->database->query('select body from texts where slug = :slug and language = :language');
 		$this->database->bind(':slug', utf8_decode($slug));
 		$this->database->bind(':language', $language);
