@@ -219,7 +219,7 @@
                                             <td>Minerva Hooper</td>
                                             <td>$23,789</td>
                                         </tr>
-                                        <tr>
+                                        <tr class="danger">
                                             <td>3</td>
                                             <td>Sage Rodriguez</td>
                                             <td>$56,142</td>
