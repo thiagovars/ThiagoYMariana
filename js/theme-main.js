@@ -13,6 +13,21 @@
 $(document).ready(function() {
 
 	/*==============================
+		0. Radiobox - Adaptação
+	/*============================*/
+
+	$(".radio-button").on('click', function () {
+		var element = this.attributes[0];
+		if ((element.nodeValue == 'radio-1')) {
+			$('#radiobox-1').prop('checked', true);
+			$('#radiobox-2').prop('checked', false);
+		} else if (element.nodeValue == 'radio-2') {
+			$('#radiobox-1').prop('checked', false);
+			$('#radiobox-2').prop('checked', true);
+		}
+	});
+
+	/*==============================
 		1. Nav - Sticky
 	==============================*/
 	$(window).on("load", function(){

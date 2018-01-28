@@ -467,13 +467,13 @@ require_once('inc/traduc.php');
                     <form id="ajaxForm" data-toggle="validator">
                         <div class="row bot-mrg-20">
 			                <div class="col-md-6 text-center">
-                                <input type="radio" id="radio-1" name="menuvegano[]" value="false">
-                                <label for="checkbox-1" class="checkbox-button"><i class="fa fa-circle-o" aria-hidden="false"></i> Menu Tradicional Chivito</label>
+                                <input type="radio" id="radiobox-1" name="veganmenu[]" value="false">
+                                <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Classico</label>
                                 <p>Chivito especificações gerador de lero lero para ver como irá ficar na página depois trocamos qualquer coisa</p>
                             </div>
                             <div class="col-md-6 text-center">
-                                <input type="radio" class="radiobox-button" id="radio-2" name="menuvegano[]" value="true">
-                                <label for="checkbox-2" class="checkbox-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label>
+                                <input type="radio" id="radiobox-2" name="veganmenu[]" value="true">
+                                <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label>
                                 <p>Acompanha aquelas saladas de gente que não pode com o sofrimento dos bichinhos, eu que como carne, lamento por eles
                                 mas quero meu troço de carne bem passada...</p>
                             </div>

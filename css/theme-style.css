@@ -717,6 +717,27 @@ a.mfp-image:hover{
 input[type="checkbox"]:checked + label.checkbox-button i.fa::before {
     content: "\f058";
 }
+/* ==================================================================
+	Adapção para radiobox
+================================================================== */
+#ajaxForm input[type="radio"]{
+	display: none;
+}
+#ajaxForm label.radio-button {
+	font-family:'Oswald', Verdana, Geneva, sans-serif;
+	font-size: 23px;
+	cursor: pointer;
+	font-weight: normal;
+}
+#ajaxForm label.radio-button:hover {
+	color: #f9667e;
+}
+#ajaxForm input[type="radio"]:checked + label.radio-button {
+    color: #f9667e;
+}
+input[type="radio"]:checked + label.radio-button i.fa::before {
+    content: "\f058";
+}
 
 /* ==================================================================
 	12. Section - Footer
