@@ -5,7 +5,7 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Light Bootstrap Dashboard by Creative Tim</title>
+	<title>Area Administrativa</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -34,7 +34,9 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-5.jpg">
+    <?php 
+    $color = (strtoupper($user_name) == 'THIAGO') ? 'azure' : 'purple';?>
+    <div class="sidebar" data-color="<?php echo $color; ?>" data-image="assets/img/sidebar-4.jpg">
 
     <!--
 
@@ -286,11 +288,10 @@
 
 	<script type="text/javascript">
     	$(document).ready(function(){
-        	demo.initChartist();
 
         	$.notify({
-            	icon: 'pe-7s-gift',
-            	message: "Welcome to <b><?php echo $user_name; ?></b>"
+            	icon: 'pe-7s-like',
+            	message: "Welcome, <b><?php echo $user_name; ?></b>"
 
             },{
                 type: 'info',
