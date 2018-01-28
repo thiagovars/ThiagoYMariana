@@ -9,6 +9,7 @@ INSERT INTO guests(`created`, `name`, `surname`, `undertwelve`, `vegan_menu`) VA
 (now(), 'Ezequiel', 'da Silveira',0,0),
 (now(), 'Clara', 'da Silveira',0,0),
 (now(), 'Patricia', 'da Silveira',0,0),
+(now(), 'Marcelo', 'Medina',0,0),
 (now(), 'João Paulo', 'da Silveira',0,0),
 (now(), 'Rejane', 'da Silveira',0,0),
 (now(), 'Nadia', 'Vargas',0,0),
