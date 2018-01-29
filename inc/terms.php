@@ -118,8 +118,8 @@ class Terms {
 				'seu nome'               => 'Tu Nombre',
 				'seu e-mail'             => 'Tu Dirección de Mail',
 				'sua mensagem'           => 'Tu Mensaje',
-				'menu normal'            => 'Menu Clasico',
-				'menu vegano'            => 'Menu Vegano',
+				'menu normal'            => 'Menú Clásico',
+				'menu vegano'            => 'Menú Vegano',
 				'que música gostaria'    => '¿Canción? (optativa)',
 			)
 		);
