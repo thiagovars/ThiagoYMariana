@@ -85,6 +85,9 @@ class Terms {
 				'seu nome'               => 'Seu Nome',
 				'seu e-mail'             => 'Seu E-mail',
 				'sua mensagem'           => 'Sua Menssagem',
+				'menu normal'            => 'Menu Clássico',
+				'menu vegano'            => 'Menu Vegano',
+				'que música gostaria'    => 'Música (opcional)',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -115,6 +118,9 @@ class Terms {
 				'seu nome'               => 'Tu Nombre',
 				'seu e-mail'             => 'Tu Dirección de Mail',
 				'sua mensagem'           => 'Tu Mensaje',
+				'menu normal'            => 'Menu Clasico',
+				'menu vegano'            => 'Menu Vegano',
+				'que música gostaria'    => '¿canción? (optativa)',
 			)
 		);
 		return $terms[$langeuage][$string];

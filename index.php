@@ -467,39 +467,42 @@ require_once('inc/traduc.php');
                     <form id="ajaxForm" data-toggle="validator">
                         <div class="row bot-mrg-20">
 			                <div class="col-md-6 text-center">
-                                <input type="radio" id="radiobox-1" name="veganmenu[]" value="false">
-                                <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Classico</label>
-                                <p>Chivito especificações gerador de lero lero para ver como irá ficar na página depois trocamos qualquer coisa</p>
+                                <!-- <input type="radio" id="radiobox-1" name="veganmenu" value="false"> -->
+                                <!-- <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Classico</label> -->
+                                <h1><span><em><?php echo Helper::traduc('menu normal') ?></em></span></h1></span>
+                                <p><?php echo Helper::traduzir('entrada com pizzas'); ?></p>
                             </div>
                             <div class="col-md-6 text-center">
-                                <input type="radio" id="radiobox-2" name="veganmenu[]" value="true">
-                                <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label>
-                                <p>Acompanha aquelas saladas de gente que não pode com o sofrimento dos bichinhos, eu que como carne, lamento por eles
-                                mas quero meu troço de carne bem passada...</p>
+                                <!-- <input type="radio" id="radiobox-2" name="veganmenu" value="true"> -->
+                                <!-- <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label> -->
+                                <h1><span><em><?php echo Helper::traduc('menu vegano') ?></em></span></h1></span>
+                                <p><?php echo Helper::traduzir('será servida uma'); ?></p>
                             </div>
 			            </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="name" placeholder="<?php echo Helper::traduc('seu nome'); ?>" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email" placeholder="<?php echo Helper::traduc('seu e-mail'); ?>" required>
+                                    <input type="text" class="form-control" name="name" placeholder="<?php echo Helper::traduc('que música gostaria'); ?>" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea rows="5" class="form-control" name="message" placeholder="<?php echo Helper::traduc('sua mensagem') ?>​" required></textarea>
+                            <div class="col-md-4">
+                                <div class="form-group col-md-6">
+                                    <input type="radio" class='form-control' id="radiobox-1" name="veganmenu" value="false" required>
+                                    <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Classico</label>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="radio" id="radiobox-2" name="veganmenu" value="true" required>
+                                    <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
-                        </div>
                     </form>
                     
                     <button class="btn btn-primary btn-lg" id="ajaxFormSubmit"><?php echo Helper::traduc('confirmar') ?></button>
