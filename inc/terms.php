@@ -78,8 +78,8 @@ class Terms {
 				'próximo passo'          => 'próximo passo',
 				'contando os minutos'    => 'Contando os minutos para o grande dia!',
 				'recordações em foto'    => 'Memória em fotos de nosso tempo juntos.',
-				'quer confirmar'         => 'Gostaria de confirmar sua presença?',
-				'presença'               => 'presença',
+				'quer confirmar'         => 'Gostaria de confirmar sua ',
+				'presença'               => 'presença?',
 				'obrigado'               => 'Obrigado!',
 				'confirmar'              => 'Confirmar!',
 				'seu nome'               => 'Seu Nome',
@@ -120,7 +120,7 @@ class Terms {
 				'sua mensagem'           => 'Tu Mensaje',
 				'menu normal'            => 'Menu Clasico',
 				'menu vegano'            => 'Menu Vegano',
-				'que música gostaria'    => '¿canción? (optativa)',
+				'que música gostaria'    => '¿Canción? (optativa)',
 			)
 		);
 		return $terms[$langeuage][$string];

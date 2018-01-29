@@ -481,11 +481,11 @@ require_once('inc/traduc.php');
                             <div class="col-md-4">
                                 <div class="form-group col-md-6">
                                     <input type="radio" class='form-control' id="radiobox-1" name="veganmenu" value="false" required>
-                                    <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Classico</label>
+                                    <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i><?php echo Helper::traduc('menu normal'); ?></label>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <input type="radio" id="radiobox-2" name="veganmenu" value="true" required>
-                                    <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label>
+                                    <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i><?php echo Helper::traduc('menu vegano'); ?></label>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
