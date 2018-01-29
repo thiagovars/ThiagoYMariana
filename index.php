@@ -14,6 +14,9 @@ require_once('inc/traduc.php');
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/themes_base_jquery-ui.css">
 
     <!-- TimeCircles-countdown -->
     <link rel="stylesheet" href="../libs/TimeCircles-countdown/TimeCircles.css">
@@ -468,7 +471,9 @@ require_once('inc/traduc.php');
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="name" placeholder="<?php echo Helper::traduc('seu nome'); ?>" required>
+                                    <div class="ui-widget">
+                                      <input type="text" id="nomes" class="form-control" name="name" placeholder="<?php echo Helper::traduc('seu nome'); ?>" required>
+                                    </div>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -519,6 +524,10 @@ require_once('inc/traduc.php');
     <!-- START: scripts -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../js/jquery-1.12.4.min.js"></script>
+
+    <!-- jQuery ui (necessary for suggestion box) -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <!-- Bootstrap main Js File-->
     <script src="../js/bootstrap.min.js"></script>
     

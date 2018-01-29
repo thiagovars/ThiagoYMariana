@@ -1,5 +1,7 @@
 <?php
 
+require_once('config.php');
+
 class db {
   private $host = DB_HOST;
   private $dbName = DB_NAME;

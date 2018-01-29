@@ -1,20 +1,49 @@
 /*	Table OF Contents
 ==========================
-1. Nav - Sticky
-2. Nav - One Page 
-3. TimeCircles Countdown
-4. Magnific Popup
-5. Ajax Form
-6. Stellar Parallax
-7. Owl Carrousel
+1. Suggestion box
+2. Radiobox - Adaptação
+3. Nav - Sticky
+4. Nav - One Page 
+5. TimeCircles Countdown
+6. Magnific Popup
+7. Ajax Form
+8. Stellar Parallax
+9. Owl Carrousel
 */
 
 "use strict";
 $(document).ready(function() {
+  /*==============================
+		1. Suggestion box
+  ==============================*/
+
+	var namesRelationeds = [];
+    $( "#nomes" )
+    .on('keyup', function () {
+    	if (namesRelationeds.length) { namesRelationeds.length = 0; }
+    	$.ajax({
+				type: 'POST',
+				url: '../inc/names_relations.php',
+				// dataType: 'json',
+				// data: Form.serialize(),
+				success: function(object){
+					console.log(object);
+				},
+				error: function(){
+					$('#sendResult').html('<img src="img/form-icon-error.png"/><br/><span class="title error">Sorry!</span><br/>Your data has not been sent. Please try again.<br /><strong>Error: #AJ001</strong><br /><br /><button class="btn btn-default BtnCloseResult" type="button">Close</button>');
+				}
+			});
+    	// namesRelationeds.push('Action Script');
+    	// namesRelationeds.push('Pearl');
+    })
+    .autocomplete({
+      source: namesRelationeds
+    });
 
 	/*==============================
-		0. Radiobox - Adaptação
+		2. Radiobox - Adaptação
 	/*============================*/
+
 	$(".radio-button").on('click', function () {
 		var element = this.attributes[0];
 		if ((element.nodeValue == 'radio-1')) {
@@ -27,21 +56,21 @@ $(document).ready(function() {
 	});
 
 	/*==============================
-		1. Nav - Sticky
+		3. Nav - Sticky
 	==============================*/
 	$(window).on("load", function(){
 	  $("#nav-sticky-wrapper").sticky({ topSpacing: 0 });
 	});
 	
 	/*==============================
-		2. Nav - One Page 
+		4. Nav - One Page 
 	==============================*/
 	$('#nav_list').onePageNav({
 		currentClass: 'active',
 	});
 
 	/*==============================
-		3. TimeCircles Countdown
+		5. TimeCircles Countdown
 	==============================*/
 	/*  */
 	$(".countdown").TimeCircles({
@@ -61,7 +90,7 @@ $(document).ready(function() {
 	});
 
 	/*==============================
-		4. Magnific Popup
+		6. Magnific Popup
 	==============================*/
 	$('.gallery-popup').magnificPopup({
 	  delegate: 'a', // child items selector, by clicking on it popup will open
@@ -97,7 +126,7 @@ $(document).ready(function() {
 	});
 
 	/*==============================
-		5. Ajax Form
+		7. Ajax Form
 	==============================*/
 	$('#ajaxFormSubmit').on('click',function(){
 		var Form = $('#ajaxForm');
@@ -128,7 +157,7 @@ $(document).ready(function() {
 
 
 	/*==============================
-		6. Stellar Parallax
+		8. Stellar Parallax
 	==============================*/
 	react_to_window();
         
@@ -159,12 +188,12 @@ $(document).ready(function() {
         }
     }
 
-    /*==============================
-		7. Owl Carrousel
+  /*==============================
+		9. Owl Carrousel
 	==============================*/
 	$('#owl-logo').owlCarousel({
 		items : 3,
 		lazyLoad : true,
 		navigation : false
-	}); 
-});
+	});
+ });

@@ -125,6 +125,4 @@ class Terms {
 		);
 		return $terms[$langeuage][$string];
 	}
-
-	
 }
