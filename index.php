@@ -465,20 +465,6 @@ require_once('inc/traduc.php');
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
 
                     <form id="ajaxForm" data-toggle="validator">
-                        <div class="row bot-mrg-20">
-			                <div class="col-md-6 text-center">
-                                <!-- <input type="radio" id="radiobox-1" name="veganmenu" value="false"> -->
-                                <!-- <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Classico</label> -->
-                                <h1><span><em><?php echo Helper::traduc('menu normal') ?></em></span></h1></span>
-                                <p><?php echo Helper::traduzir('entrada com pizzas'); ?></p>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <!-- <input type="radio" id="radiobox-2" name="veganmenu" value="true"> -->
-                                <!-- <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i> Menu Vegano</label> -->
-                                <h1><span><em><?php echo Helper::traduc('menu vegano') ?></em></span></h1></span>
-                                <p><?php echo Helper::traduzir('será servida uma'); ?></p>
-                            </div>
-			            </div>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
