@@ -15,7 +15,6 @@ $(document).ready(function() {
 	/*==============================
 		0. Radiobox - Adaptação
 	/*============================*/
-
 	$(".radio-button").on('click', function () {
 		var element = this.attributes[0];
 		if ((element.nodeValue == 'radio-1')) {
