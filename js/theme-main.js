@@ -24,10 +24,13 @@ $(document).ready(function() {
     	$.ajax({
 				type: 'POST',
 				url: '../inc/names_relations.php',
-				// dataType: 'json',
 				// data: Form.serialize(),
-				success: function(object){
-					console.log(object);
+				success: function(data){
+
+					for (var i in data) {
+					  console.log(data[i])
+					}
+					// namesRelationeds.push(object.resultset);
 				},
 				error: function(){
 					$('#sendResult').html('<img src="img/form-icon-error.png"/><br/><span class="title error">Sorry!</span><br/>Your data has not been sent. Please try again.<br /><strong>Error: #AJ001</strong><br /><br /><button class="btn btn-default BtnCloseResult" type="button">Close</button>');
