@@ -20,21 +20,17 @@ $(document).ready(function() {
 	var namesRelationeds = [];
     $( "#nomes" )
     .on('keyup', function () {
+		console.log(this.value);
     	if (namesRelationeds.length) { namesRelationeds.length = 0; }
     	$.ajax({
-				type: 'POST',
-				url: '../inc/names_relations.php',
-				// data: Form.serialize(),
-				success: function(data){
-
-					for (var i in data) {
-					  console.log(data[i])
-					}
-					// namesRelationeds.push(object.resultset);
-				},
-				error: function(){
-					$('#sendResult').html('<img src="img/form-icon-error.png"/><br/><span class="title error">Sorry!</span><br/>Your data has not been sent. Please try again.<br /><strong>Error: #AJ001</strong><br /><br /><button class="btn btn-default BtnCloseResult" type="button">Close</button>');
-				}
+			type: 'POST',
+			dataType: 'json',
+			url: '../inc/names_relations.php',
+			data: {"name" : this.value},
+			}).done(function (data) {
+				$.each(data, function (key, val) {
+					namesRelationeds.push(val);
+				});
 			});
     	// namesRelationeds.push('Action Script');
     	// namesRelationeds.push('Pearl');
@@ -131,27 +127,27 @@ $(document).ready(function() {
 	/*==============================
 		7. Ajax Form
 	==============================*/
-	$('#ajaxFormSubmit').on('click',function(){
+	$('#ajaxForm').on('submit',function(){
 		var Form = $('#ajaxForm');
 		var hasErrors = Form.validator('validate').has('.has-error').length
-		if (hasErrors){
-			
-		}else{
+		var veganmenu = $("input[name=veganmenu]:checked").val();
+		if (!hasErrors && veganmenu == 'undefined'){
 			$('#fullscreenloading').show();
 			$('#boxedResult').show();
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
-			$.ajax({
-				type: 'POST',
-				url: 'send_form.php',
-				data: Form.serialize(),
-				success: function(msg){
-					$('#sendResult').html(msg)
-				},
-				error: function(){
-					$('#sendResult').html('<img src="img/form-icon-error.png"/><br/><span class="title error">Sorry!</span><br/>Your data has not been sent. Please try again.<br /><strong>Error: #AJ001</strong><br /><br /><button class="btn btn-default BtnCloseResult" type="button">Close</button>');
-				}
-			});
+			// $.ajax({
+			// 	type: 'POST',
+			// 	url: 'send_form.php',
+			// 	data: Form.serialize(),
+			// 	success: function(msg){
+			// 		$('#sendResult').html(msg)
+			// 	},
+			// 	error: function(){
+			// 		$('#sendResult').html('<img src="img/form-icon-error.png"/><br/><span class="title error">Sorry!</span><br/>Your data has not been sent. Please try again.<br /><strong>Error: #AJ001</strong><br /><br /><button class="btn btn-default BtnCloseResult" type="button">Close</button>');
+			// 	}
+			// });
 		}
+		return false;
 	});
 	$(document).on('click', '.BtnCloseResult', function () {
 		$('#boxedResult').hide();
