@@ -467,7 +467,7 @@ require_once('inc/traduc.php');
                 </div>
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
 
-                    <form id="ajaxForm" data-toggle="validator">
+                    <form id="ajaxForm" method="POST" data-toggle="validator">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
@@ -479,13 +479,13 @@ require_once('inc/traduc.php');
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="name" placeholder="<?php echo Helper::traduc('que música gostaria'); ?>">
+                                    <input type="text" id="musica" class="form-control" name="musica" placeholder="<?php echo Helper::traduc('que música gostaria'); ?>">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group col-md-6">
-                                    <input type="radio" class='form-control' id="radiobox-1" name="veganmenu" value="false" required>
+                                    <input type="radio" class='form-control' id="radiobox-1" name="veganmenu" value="false" required checked='checked'>
                                     <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i><?php echo Helper::traduc('menu normal'); ?></label>
                                 </div>
                                 <div class="form-group col-md-6">
@@ -496,7 +496,8 @@ require_once('inc/traduc.php');
                             </div>
                     </form>
                     
-                    <button class="btn btn-primary btn-lg" id="ajaxFormSubmit"><?php echo Helper::traduc('confirmar') ?></button>
+                    <input type="hidden" name="function" value="confirmAssistant">
+                    <button class="btn btn-primary btn-lg" id='formAssistant'><?php echo Helper::traduc('confirmar') ?></button>
             	</div>
             </div>
         </div>
@@ -545,7 +546,7 @@ require_once('inc/traduc.php');
     <!-- Magnific Popup core JS file -->
 	<script src="../libs/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Bootstrap Validator -->
-    <script src="../libs/bootstrap-validator/validator.min.js"></script>
+    <script src="../libs/bootstrap-validator/validator.js"></script>
 	<!-- Theme Main Js file -->
 	<script src="../js/theme-main.js"></script>
     <!-- END: scripts -->

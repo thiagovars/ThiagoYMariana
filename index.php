@@ -1,3 +1,3 @@
 <?php
-header('localhost/thiagoymariana/pt/');
+header('http://localhost/thiagoymariana/pt/');
 exit;

@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(pt*)/$ index.php?language=pt    [L,QSA]
-RewriteRule ^(es*)/$ index.php?language=es    [L,QSA]
+RewriteRule ^(pt*)/$ inicio.php?language=pt    [L,QSA]
+RewriteRule ^(es*)/$ inicio.php?language=es    [L,QSA]
 RewriteRule ^(admin*)/$ admin/                [L,QSA]

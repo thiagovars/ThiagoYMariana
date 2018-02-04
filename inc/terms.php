@@ -88,6 +88,7 @@ class Terms {
 				'menu normal'            => 'Menu Clássico',
 				'menu vegano'            => 'Menu Vegano',
 				'que música gostaria'    => 'Música (opcional)',
+				'obrigado por confirmar' => 'Obrigado por confirmar',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
