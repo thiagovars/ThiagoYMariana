@@ -64,7 +64,7 @@ class Terms {
 				'casal'                  => 'Casal',
 				'nossa história'         => 'Nossa História',
 				'galeria'                => 'Galeria',
-				'caixinha'               => 'Caixinha',
+				'contribuição'           => 'Contribuição',
 				'comparecer'             => 'Confirmar Presença',
 				'nossa'                  => 'Nossa',
 				'história'               => 'História',
@@ -88,6 +88,7 @@ class Terms {
 				'menu normal'            => 'Menu Clássico',
 				'menu vegano'            => 'Menu Vegano',
 				'que música gostaria'    => 'Música (opcional)',
+				'informações'            => 'Informações',
 				'obrigado por confirmar' => 'Obrigado por confirmar',
 			),
 			'es' => array(
@@ -98,7 +99,7 @@ class Terms {
 				'casal'                  => 'La Pareja',
 				'nossa história'         => 'Nuestra Historia',
 				'galeria'                => 'Galería',
-				'caixinha'               => 'Colectivo',
+				'contribuição'           => 'Colectivo',
 				'comparecer'             => 'Confirmar Asistencia',
 				'nossa'                  => 'Nuestra',
 				'história'               => 'Historia',
@@ -121,6 +122,7 @@ class Terms {
 				'sua mensagem'           => 'Tu Mensaje',
 				'menu normal'            => 'Menú Clásico',
 				'menu vegano'            => 'Menú Vegano',
+				'obrigado por confirmar' => 'Obrigado por confirmar',
 				'que música gostaria'    => '¿Canción? (optativa)',
 			)
 		);

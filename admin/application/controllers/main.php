@@ -4,14 +4,15 @@ class Main extends Controller {
 	
 	function index()
 	{
-		$session = $this->loadHelper('session_helper');
-		$guests = $this->loadModel('guests');
-		if (empty($session->get('user'))) {
+		if (empty($_SESSION['user'])) {
 			$this->redirect('/auth');
 		}
+		$session = $this->loadHelper('session_helper');
+		$guests = $this->loadModel('guests');
 		$template = $this->loadView('main');
 		$template->set('user_name', $session->get('user'));
 		$template->set('invitados', $guests->getGuests());
+		$template->set('total_guests', $guests->getTotalGuests());
 		$totals = $guests->getTotal();
 		$template->set('total', $this->getTotal($totals));
 		$template->render();

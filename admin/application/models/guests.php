@@ -20,4 +20,9 @@ class Guests extends Model {
 		$this->bind(':nameFather', '%'.utf8_encode($nameFather).'%');
 		return $this->resultset();
 	}
+
+	function getTotalGuests() {
+		$this->query('SELECT COUNT(guest_id) as total_guests FROM GUESTS');
+		return $this->single()['total_guests'];
+	}
 }
