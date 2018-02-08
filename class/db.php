@@ -101,8 +101,8 @@ class db {
   
   public function queryError(){
       $this->qError = $this->dbh->errorInfo();
-      if(!is_null($qError[2])){
-          echo $qError[2];
+      if(!is_null($this->qError[2])){
+          echo $this->qError[2];
       }
   }
   

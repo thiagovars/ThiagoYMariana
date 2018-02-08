@@ -104,7 +104,7 @@ require_once('inc/traduc.php');
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav_menu">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only"><?php echo Helper::traduc('mudar navegação'); ?></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -120,6 +120,7 @@ require_once('inc/traduc.php');
                         <li class=""><a href="#gallery"><?php echo Helper::traduc('galeria'); ?></a></li>
                         <li class=""><a href="#gift-registry"><?php echo Helper::traduc('contribuição'); ?></a></li>
                         <li class=""><a href="#rsvp"><?php echo Helper::traduc('comparecer'); ?></a></li>
+                        <li class=""><a href="#info"><?php echo Helper::traduc('informações'); ?></a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
@@ -242,7 +243,7 @@ require_once('inc/traduc.php');
                       <h2 class="timeline-title"><span><?php echo Helper::traducMes('janeiro'); ?></span> 2018</h2>
                     </div>
                     <div class="timeline-body text-center">
-                      <img src="../img/story/story-img-04.jpg" class="img-responsive" alt="Our Story"/>
+                      <img src="../img/Fotoshistoria/IMG_20180207_070812_068.jpg" class="img-responsive" alt="Our Story"/>
                       <h2 class="timeline-title"><?php echo Helper::traduc('tempo circular'); ?></h2>
                       <p><?php echo Helper::traduzir('existem pessoas que'); ?></p>
                     </div>
@@ -411,6 +412,7 @@ require_once('inc/traduc.php');
                             </div>
                     </form>
                     <button class="btn btn-primary btn-lg" id='formAssistant'><?php echo Helper::traduc('confirmar') ?></button>
+                    <button class="btn btn-primary btn-lg" id='formNotAssistant'><?php echo Helper::traduc('não confirmar') ?></button>
             	</div>
             </div>
         </div>

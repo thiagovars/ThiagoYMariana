@@ -152,7 +152,33 @@ $(document).ready(function() {
 				}
 			});
 		}
-		return false;
+	});
+	$('#formNotAssistant').on('click', function(event) {
+		event.preventDefault(event);
+		var Form = $('#ajaxForm');
+		var hasErrors = Form.validator('validate').has('.has-error').length
+		var veganmenu = $("input[name=veganmenu]:checked").val();
+		if (!hasErrors){
+			$('#fullscreenloading').show();
+			$('#boxedResult').show();
+			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
+			$.ajax({
+				type: 'POST',
+				url: '../inc/confirm.php?confirm=no',
+				data: Form.serialize(),
+				success: function(msg){
+					if (msg) {
+						$('#sendResult').html('<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por sua resposta</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Fechar</button>');
+						$('#nomes').val('');
+						$('#musica').val('');
+						$('#radiobox-1').prop('checked', true);
+					}
+				},
+				error: function(){
+					$('#sendResult').html('<img src="../img/form-icon-error.png"/><br/><span class="title error">Sorry!</span><br/>Your data has not been sent. Please try again.<br /><strong>Error: #AJ001</strong><br /><br /><button class="btn btn-default BtnCloseResult" type="button">Tentar Novamente</button>');
+				}
+			});
+		}
 	});
 	$(document).on('click', '.BtnCloseResult', function () {
 		$('#boxedResult').hide();

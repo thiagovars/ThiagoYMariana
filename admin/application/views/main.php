@@ -38,69 +38,6 @@
     $color = (strtoupper($user_name) == 'THIAGO') ? 'azure' : 'purple';?>
     <div class="sidebar" data-color="<?php echo $color; ?>" data-image="assets/img/sidebar-4.jpg">
 
-    <!--
-
-        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
-        Tip 2: you can also add an image using data-image tag
-
-    -->
-
-    	<!-- <div class="sidebar-wrapper">
-            <div class="logo">
-                <p><h3>Thiago & Mariana</h3></p>
-            </div>
-
-            <ul class="nav">
-                <li class="active">
-                    <a href="invitados">
-                        <i class="pe-7s-note2"></i>
-                        <p>Lista de invitados</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="user.html">
-                        <i class="pe-7s-user"></i>
-                        <p>User Profile</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="table.html">
-                        <i class="pe-7s-note2"></i>
-                        <p>Table List</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="typography.html">
-                        <i class="pe-7s-news-paper"></i>
-                        <p>Typography</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="icons.html">
-                        <i class="pe-7s-science"></i>
-                        <p>Icons</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="maps.html">
-                        <i class="pe-7s-map-marker"></i>
-                        <p>Maps</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="notifications.html">
-                        <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
-                        <i class="pe-7s-rocket"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li>
-            </ul>
-    	</div> -->
     </div>
 
     <div class="main-panel">
@@ -116,62 +53,7 @@
                     <a class="navbar-brand" href="#">Cálculo de convidados</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-left">
-                        <!-- <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-dashboard"></i>
-								<p class="hidden-lg hidden-md">Dashboard</p>
-                            </a>
-                        </li> -->
-                        <!-- <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-globe"></i>
-                                    <b class="caret hidden-lg hidden-md"></b>
-									<p class="hidden-lg hidden-md">
-										5 Notifications
-										<b class="caret"></b>
-									</p>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Notification 1</a></li>
-                                <li><a href="#">Notification 2</a></li>
-                                <li><a href="#">Notification 3</a></li>
-                                <li><a href="#">Notification 4</a></li>
-                                <li><a href="#">Another notification</a></li>
-                              </ul>
-                        </li>
-                        <li>
-                           <a href="">
-                                <i class="fa fa-search"></i>
-								<p class="hidden-lg hidden-md">Search</p>
-                            </a>
-                        </li> -->
-                    </ul>
-
                     <ul class="nav navbar-nav navbar-right">
-                        <!-- <li>
-                           <a href="">
-                               <p>Account</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <p>
-										Dropdown
-										<b class="caret"></b>
-									</p>
-
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                              </ul>
-                        </li> -->
                         <li>
                             <a href="<?php echo BASE_URL; ?>/auth/logout">
                                 <p>Log out</p>
@@ -241,7 +123,13 @@
                                     </thead>
                                     <tbody>
                                         <?php foreach ($invitados as $invitado) { 
-                                        $lineClass = ($invitado['confirmed']) ? 'success' : 'normal';    
+                                            if ($invitado['confirmed'] == 0) {
+                                                $lineClass = 'normal';
+                                            } else if ($invitado['confirmed'] == 1) {
+                                                $lineClass = 'success';
+                                            } else {
+                                                $lineClass = 'danger';
+                                            }
                                         ?>
                                         <tr class="<?php echo $lineClass; ?>">
                                             <td><?php echo $invitado['guest_id']; ?></td>
