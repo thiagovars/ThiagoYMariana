@@ -100,8 +100,22 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Total de Convidados</h4>
-                                <h3 class="text-primary"><?php echo $total_guests; ?> Convidado(s)</h3>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <th>Total de convidados</th>
+                                        <th>Confirmados</th>
+                                        <th>Não comparecerão</th>
+                                        <th>Sem resposta</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><h2 class="text-primary"><?php echo $total_guests['total']; ?> Convidados</h2></td>
+                                            <td><h2 class="text-success"><?php echo $total_guests['comparecerao']; ?> Virão</h2></td>
+                                            <td><h2 class="text-warning"><?php echo $total_guests['naoComparecerao']; ?> Não virão</h2></td>
+                                            <td><h2 class="text-info"><?php echo $total_guests['aindaNaoResponderam']; ?> Não responderam</h2></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

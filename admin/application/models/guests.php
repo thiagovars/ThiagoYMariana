@@ -22,7 +22,19 @@ class Guests extends Model {
 	}
 
 	function getTotalGuests() {
-		$this->query('SELECT COUNT(guest_id) as total_guests FROM GUESTS');
-		return $this->single()['total_guests'];
+		$this->query('SELECT confirmed FROM GUESTS');
+		$resultset = $this->resultset();
+		$total = array('total' => 0, 'comparecerao' => 0, 'naoComparecerao' => 0, 'aindaNaoResponderam' => 0);
+		foreach ($resultset as $key => $guest) { 
+			$total['total'] = $key + 1;
+			if ($guest['confirmed'] == 1) {
+				$total['comparecerao'] += 1;
+			} else if ($guest['confirmed'] == 2) {
+				$total['naoComparecerao'] += 1;
+			} else {
+				$total['aindaNaoResponderam'] += 1;
+			}
+		}
+		return $total;
 	}
 }

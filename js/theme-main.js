@@ -141,7 +141,7 @@ $(document).ready(function() {
 				data: Form.serialize(),
 				success: function(msg){
 					if (msg) {
-						$('#sendResult').html('<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>'+thanks+'</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar outro convidado?</button>');
+						$('#sendResult').html('<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por comparecer!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar outro convidado?</button>');
 						$('#nomes').val('');
 						$('#musica').val('');
 						$('#radiobox-1').prop('checked', true);

@@ -33,6 +33,12 @@ if ($_REQUEST['confirm']) {
 	$db->bind(":guest_id", $resultado['guest_id']);
 	$db->execute();
 	if (!$db->queryError()) {
+		if (!empty($_POST['musica'])) {
+			$db->query("INSERT INTO guestmusic (guest_id, name) VALUES (:guest_id, :name)");
+			$db->bind(":guest_id", $resultado['guest_id']);
+			$db->bind(":name", $_POST['musica']);
+			$db->execute();
+		}
 		echo true;
 	} else {
 		echo false;
