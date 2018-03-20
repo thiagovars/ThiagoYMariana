@@ -69,8 +69,8 @@ require_once('inc/traduc.php');
         <div class="container">
         	<div class="row">
                 <div class="col-xs-12">
-                    <a href="/thiagoymariana/pt/">PORTUGUÊS</a> | 
-                    <a href="/thiagoymariana/es/">ESPAÑOL</a>
+                    <a href="/pt/">PORTUGUÊS</a> | 
+                    <a href="/es/">ESPAÑOL</a>
                 	<h3 class="title"><span></span><?php echo Helper::traduc('nos casamos'); ?>
                     <span></span></h3>
                     <ul class="names">
