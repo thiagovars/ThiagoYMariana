@@ -33,6 +33,7 @@ class db {
   }
   
   public function query($query){
+    var_dump($this->host, $this->dbName, $this->user, $this->pass);
       $this->stmt = $this->dbh->prepare($query);
   }
   
