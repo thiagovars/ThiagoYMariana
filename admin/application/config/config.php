@@ -10,8 +10,8 @@ $config['db_name'] = 'tym_db'; // Database name
 $config['db_username'] = 'root'; // Database username
 $config['db_password'] = ''; // Database password
 
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql472.umbler.com');
 define('DB_NAME', 'tym_db');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'thiagovars');
+define('DB_PASS', 'U.EL7|y.o9|UA');
 ?>
