@@ -102,7 +102,7 @@ class Model {
 	public function execute(){
       return $this->stmt->execute();
       
-      $this->qError = $this->connectino->errorInfo();
+      $this->qError = $this->connection->errorInfo();
         if(!is_null($this->qError[2])){
 	        echo $this->qError[2];
         }
@@ -124,19 +124,19 @@ class Model {
   }
   
   public function lastInsertId(){
-      return $this->connectino->lastInsertId();
+      return $this->connection->lastInsertId();
   }
   
   public function beginTransaction(){
-      return $this->connectino->beginTransaction();
+      return $this->connection->beginTransaction();
   }
   
   public function endTransaction(){
-      return $this->connectino->commit();
+      return $this->connection->commit();
   }
   
   public function cancelTransaction(){
-      return $this->connectino->rollBack();
+      return $this->connection->rollBack();
   }
   
   public function debugDumpParams(){
@@ -144,10 +144,14 @@ class Model {
   }
   
   public function queryError(){
-      $this->qError = $this->connectino->errorInfo();
+      $this->qError = $this->connection->errorInfo();
       if(!is_null($qError[2])){
           echo $qError[2];
       }
+  }
+
+  public function closedb() {
+    unset($this->connection)
   }
     
 }
