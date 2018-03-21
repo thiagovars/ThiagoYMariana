@@ -37,4 +37,25 @@ class Guests extends Model {
 		}
 		return $total;
 	}
+
+	function getName($guests_id) {
+		$this->query('SELECT name, surname FROM GUESTS WHERE guest_id = :guest_id');
+		$this->bind(':guest_id', $guests_id);
+		$resultset = $this->resultset();
+		foreach ($resultset as $key => $guest) {
+			$name = $guest['name'] . ' ' . $guest['surname'];
+		}
+		return $name;
+	}
+
+	function remove($guests_id) {
+		if (empty($guests_id)) {
+			return false;
+		} else {
+			return true;
+		}
+		$this->query("DELETE FROM GUESTS WHERE guest_id = :guest_id");
+		$this->bind(':guest_id', $guests_id);
+		return $this->execute();
+	}
 }

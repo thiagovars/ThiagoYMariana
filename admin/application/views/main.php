@@ -29,10 +29,46 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <script src="assets/js/costume.js"></script>
 
 </head>
 <body>
 
+<!-- Modal -->
+<div class="modal fade" id="registroInvitado" tabindex="-1" role="dialog" aria-labelledby="registroInvitado" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span>Registro de Invitado(a)</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <form class="form-inline" id="agregarInvitado">
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control" id="name" aria-describedby="nomeInvitado" name="name" placeholder="Nombre del invitado" />
+                    <input type="text" class="form-control" id="apellido" aria-describedby="apellidoInvitado" name="apellido" placeholder="Apellido del invitado" />
+                </div>
+                <div class="form-group mb-2">
+                    <input type="checkbox" class="form-checkbox-input" value="true" id="underTwelve" name="underTwelve" />
+                    <label class="form-checkbox-label" for="underTwelve">
+                        Ninõ?
+                    </label>
+                    <input type="checkbox" class="form-checkbox-input" value="true" id="vegan" name="vegan" />
+                    <label class="form-checkbox-label" for="underTwelve">
+                        Vegano?
+                    </label>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="agregaInvitado($('#agregarInvitado'))">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="wrapper">
     <?php 
     $color = (strtoupper($user_name) == 'THIAGO') ? 'azure' : 'purple';?>
@@ -44,12 +80,6 @@
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar">teste</span>
-                        <span class="icon-bar">asdf</span>
-                        <span class="icon-bar">bbb</span>
-                    </button>
                     <a class="navbar-brand" href="#">Cálculo de convidados</a>
                 </div>
                 <div class="collapse navbar-collapse">
@@ -120,12 +150,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row" id='main'>
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
                                 <h4 class="title">Lista de convidados</h4>
                                 <p class="category">Em verde são os convidados que já confirmaram e estão sendo contabilizados no total</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registroInvitado">
+                                    <i class="fa fa-check text-info"></i><strong>Agregar Invitado(a)</strong>
+                                </button>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover">
@@ -134,6 +167,7 @@
                                         <th>Name</th>
                                         <th>Niño</th>
                                         <th>Vegano</th>
+                                        <th>Ações</th>
                                     </thead>
                                     <tbody>
                                         <?php foreach ($invitados as $invitado) { 
@@ -145,11 +179,12 @@
                                                 $lineClass = 'danger';
                                             }
                                         ?>
-                                        <tr class="<?php echo $lineClass; ?>">
+                                        <tr class="<?php echo $lineClass; ?>" id='invitado<?php echo $invitado['guest_id']; ?>'>
                                             <td><?php echo $invitado['guest_id']; ?></td>
                                             <td><?php echo utf8_encode($invitado['name']).' '.utf8_encode($invitado['surname']); ?></td>
                                             <td><i class="fa <?php echo ($invitado['undertwelve']) ? 'fa-check text-success' : 'fa-times text-danger'; ?>"></i></td>
                                             <td><i class="fa <?php echo ($invitado['vegan_menu']) ? 'fa-check text-success' : 'fa-times text-danger'; ?>"></i></td>
+                                            <td><a href="#invitado*<?php echo $invitado['guest_id']; ?>" onclick="remover(<?php echo $invitado['guest_id']; ?>)"><i class="fa pe-7s-trash"></a></i></td>
                                         </tr>
                                         <?php } ?>
                                     </tbody>
@@ -161,8 +196,7 @@
                 </div>
             </div>
         </div>
-
-
+        
         <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">
@@ -189,9 +223,6 @@
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
 
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
 	<script src="assets/js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
@@ -207,7 +238,7 @@
 
             },{
                 type: 'info',
-                timer: 4000
+                timer: 100
             });
 
     	});

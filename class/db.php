@@ -105,6 +105,10 @@ class db {
           echo $this->qError[2];
       }
   }
+
+  public function closedb() {
+    unset($this->dbh);
+  }
   
 }//end class db
 

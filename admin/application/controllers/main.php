@@ -26,6 +26,12 @@ class Main extends Controller {
   	$totals['normal'] = $sum;
   	return $totals;
   }
-}
 
-?>
+  function remover() {
+  	$guests = $this->loadModel('guests');
+  	$name = $guests->getName($_REQUEST['guest_id']);
+  	$aRetorno = array('name' => utf8_encode($name), 'success' => false);
+  	$aRetorno['success'] = $guests->remove($_REQUEST['guest_id']);
+  	return json_encode($aRetorno, JSON_FORCE_OBJECT);
+  }
+}
