@@ -22,7 +22,7 @@ class Guests extends Model {
 	}
 
 	function getTotalGuests() {
-		$this->query('SELECT confirmed FROM GUESTS');
+		$this->query('SELECT confirmed FROM guests');
 		$resultset = $this->resultset();
 		$total = array('total' => 0, 'comparecerao' => 0, 'naoComparecerao' => 0, 'aindaNaoResponderam' => 0);
 		foreach ($resultset as $key => $guest) { 
@@ -39,7 +39,7 @@ class Guests extends Model {
 	}
 
 	function getName($guests_id) {
-		$this->query('SELECT name, surname FROM GUESTS WHERE guest_id = :guest_id');
+		$this->query('SELECT name, surname FROM guests WHERE guest_id = :guest_id');
 		$this->bind(':guest_id', $guests_id);
 		$resultset = $this->resultset();
 		foreach ($resultset as $key => $guest) {
@@ -54,7 +54,7 @@ class Guests extends Model {
 		} else {
 			return true;
 		}
-		$this->query("DELETE FROM GUESTS WHERE guest_id = :guest_id");
+		$this->query("DELETE FROM guests WHERE guest_id = :guest_id");
 		$this->bind(':guest_id', $guests_id);
 		return $this->execute();
 	}
