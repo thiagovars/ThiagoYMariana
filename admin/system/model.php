@@ -151,7 +151,7 @@ class Model {
   }
 
   public function closedb() {
-    unset($this->connection)
+    unset($this->connection);
   }
     
 }
