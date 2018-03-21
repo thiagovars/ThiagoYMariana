@@ -138,9 +138,8 @@ require_once('inc/traduc.php');
                         <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
-                            <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/capirotoKhun" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/pedrothiagosilveira" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
                             <!-- <a href="#" target="_blank" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
                             <a href="#" target="_blank" class="google"><i class="fa fa-google-plus"></i></a>
                             <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a>
@@ -154,9 +153,8 @@ require_once('inc/traduc.php');
                         <img src="../img/perfil/Mariana.jpg" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
-                            <a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/Sakufeli" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://instagram.com/maru_gerali" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
