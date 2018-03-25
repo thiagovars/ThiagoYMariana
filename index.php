@@ -428,7 +428,7 @@ require_once('inc/traduc.php');
                     <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('informações'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em> <?php echo Helper::traduc('Sugestões'); ?> </em></p>
+                        <p><em> <?php echo Helper::traduc('sugestões de hostels'); ?> </em></p>
                     </div>
                     <div class="row">
                         <table class="table table-stripped">
