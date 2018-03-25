@@ -433,22 +433,22 @@ require_once('inc/traduc.php');
                     <div class="row">
                         <table class="table table-stripped">
                             <tr>
-                                <td><a target="_blank" href="http://www.daysinn.com.uy/inicio.asp">Days Inn (Atrás de tres cruces)</a></td>
+                                <td><a target="_blank" href="http://www.daysinn.com.uy/inicio.asp"><em>Days Inn (Atrás de tres cruces)</em></a></td>
                             </tr>
                             <tr>
-                                <td><a target="_blank" href="http://www.mercosuruniversitas.com/es/">Mercosur Universitas (Hospital Italiano)</a></td>
+                                <td><a target="_blank" href="http://www.mercosuruniversitas.com/es/"><em>Mercosur Universitas (Hospital Italiano)</em></a></td>
                             </tr>
                             <tr>
-                                <td><a target="_blank" href="http://costauruguay.uy/hoteles.php#">Ciudadano Suites (Problemas en la página)</a></td>
+                                <td><a target="_blank" href="http://costauruguay.uy/hoteles.php#"><em>Ciudadano Suites (Problemas en la página)</em></a></td>
                             </tr>
                             <tr>
-                                <td><a target="_blank" href="http://hotel.hotelescuelakolping.edu.uy/">Hotel Escuela Kolping</a></td>
+                                <td><a target="_blank" href="http://hotel.hotelescuelakolping.edu.uy/"><em>Hotel Escuela Kolping</em></a></td>
                             </tr>
                             <tr>
-                                <td><a target="_blank" href="http://www.canebnb.com/">Bed and Brekfast Cane</a></td>
+                                <td><a target="_blank" href="http://www.canebnb.com/"><em>Bed and Brekfast Cane</em></a></td>
                             </tr>
                             <tr>
-                                <td><a target="_blank" href="https://www.chelagarto.com/es">Hostel Che Lagarto</a></td>
+                                <td><a target="_blank" href="https://www.chelagarto.com/es"><em>Hostel Che Lagarto</em></a></td>
                             </tr>
                         </table>
 
