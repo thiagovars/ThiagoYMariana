@@ -136,14 +136,15 @@ require_once('inc/traduc.php');
                 	<div class="profile">
                         <h2>Thiago <span>da Silveira</span></h2>
                         <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
+                        <p>
+                            "[...]Para abraçar seu irmão
+                            E beijar sua menina na rua
+                            É que se fez o seu braço
+                            O seu lábio e a sua voz [...]"
+                        </p>
                 		<div class="social-icons">
                             <a href="https://www.facebook.com/capirotoKhun" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="https://instagram.com/pedrothiagosilveira" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                            <!-- <a href="#" target="_blank" class="pinterest"><i class="fa fa-pinterest-p"></i></a>
-                            <a href="#" target="_blank" class="google"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" target="_blank" class="youtube"><i class="fa fa-youtube-play"></i></a>
-                            <a href="#" target="_blank" class="vimeo"><i class="fa fa-vimeo"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -151,7 +152,9 @@ require_once('inc/traduc.php');
                 	<div class="profile">
                         <h2>Mariana <span>Gerali</span></h2>
                         <img src="../img/perfil/Mariana.jpg" width="395" class="img-responsive img-circle" alt="Groom"/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
+                        <p>
+                            
+                        </p>
                 		<div class="social-icons">
                             <a href="https://www.facebook.com/Sakufeli" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="https://instagram.com/maru_gerali" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -425,9 +428,31 @@ require_once('inc/traduc.php');
                     <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('informações'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em> Abitab Número de Cuenta </em></p>
+                        <p><em> <?php echo Helper::traduc('Sugestões'); ?> </em></p>
                     </div>
+                    <div class="row">
+                        <table class="table table-stripped">
+                            <tr>
+                                <td><a target="_blank" href="http://www.daysinn.com.uy/inicio.asp">Days Inn (Atrás de tres cruces)</a></td>
+                            </tr>
+                            <tr>
+                                <td><a target="_blank" href="http://www.mercosuruniversitas.com/es/">Mercosur Universitas (Hospital Italiano)</a></td>
+                            </tr>
+                            <tr>
+                                <td><a target="_blank" href="http://costauruguay.uy/hoteles.php#">Ciudadano Suites (Problemas en la página)</a></td>
+                            </tr>
+                            <tr>
+                                <td><a target="_blank" href="http://hotel.hotelescuelakolping.edu.uy/">Hotel Escuela Kolping</a></td>
+                            </tr>
+                            <tr>
+                                <td><a target="_blank" href="http://www.canebnb.com/">Bed and Brekfast Cane</a></td>
+                            </tr>
+                            <tr>
+                                <td><a target="_blank" href="https://www.chelagarto.com/es">Hostel Che Lagarto</a></td>
+                            </tr>
+                        </table>
 
+                    </div>
                 </div>
             </div>
         </div>

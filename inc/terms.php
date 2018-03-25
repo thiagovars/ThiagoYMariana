@@ -89,9 +89,9 @@ class Terms {
 				'sua mensagem'           => 'Sua Menssagem',
 				'menu normal'            => 'Menu Clássico',
 				'menu vegano'            => 'Menu Vegano',
-				'que música gostaria'    => 'Música (opcional)',
 				'informações'            => 'Informações',
-				'obrigado por confirmar' => 'Obrigado por confirmar',
+				'que música gostaria'    => 'Música (opcional)',
+				'sugestões de hostels'   => 'Sugestões de Hostels & Hotéis',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -129,6 +129,7 @@ class Terms {
 				'obrigado por confirmar' => 'Obrigado por confirmar',
 				'informações'            => 'Informaciones',
 				'que música gostaria'    => '¿Canción? (optativa)',
+				'sugestões de hostels'   => 'Sugerencias de Hostels y Hoteles',
 			)
 		);
 		return $terms[$langeuage][$string];
