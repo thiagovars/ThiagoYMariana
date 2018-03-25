@@ -150,7 +150,7 @@ require_once('inc/traduc.php');
                 <div class="col-md-6 col-xs-12 text-center">
                 	<div class="profile">
                         <h2>Mariana <span>Gerali</span></h2>
-                        <img src="../img/perfil/Mariana.jpg" class="img-responsive img-circle" alt="Groom"/>
+                        <img src="../img/perfil/Mariana.jpg" width="395" class="img-responsive img-circle" alt="Groom"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor non sem eu faucibus. Aenean pellentesque dui tincidunt, dictum massa congue, euismod ipsum. Duis auctor in est ac dignissim.</p>
                 		<div class="social-icons">
                             <a href="https://www.facebook.com/Sakufeli" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
