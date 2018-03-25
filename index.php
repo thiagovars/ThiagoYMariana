@@ -431,7 +431,7 @@ require_once('inc/traduc.php');
                         <p><em> <?php echo Helper::traduc('sugestões de hostels'); ?> </em></p>
                     </div>
                     <div class="row">
-                        <table class="table table-stripped">
+                        <table class="table table-dark">
                             <tr>
                                 <td><a target="_blank" href="http://www.daysinn.com.uy/inicio.asp"><em>Days Inn (Atrás de tres cruces)</em></a></td>
                             </tr>
