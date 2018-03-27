@@ -129,6 +129,12 @@ $(document).ready(function() {
 	$('#formAssistant').on('click', function(event) {
 		event.preventDefault(event);
 		var language = $('#language').val();
+		var thankText = '';
+		if (language == 'pt') {
+			thankText = '<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por comparecer!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar outro convidado?</button>';
+		} else {
+			thankText = '<img src="../img/form-icon-ok.png"/><br/><span class="title success">¡Confirmado!</span><br/><br /><strong>¡Gracias por asistir!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar otro invitado?</button>';
+		}
 		var Form = $('#ajaxForm');
 		var hasErrors = Form.validator('validate').has('.has-error').length
 		var veganmenu = $("input[name=veganmenu]:checked").val();
@@ -142,7 +148,7 @@ $(document).ready(function() {
 				data: Form.serialize(),
 				success: function(msg){
 					if (msg) {
-						$('#sendResult').html('<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por comparecer!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar outro convidado?</button>');
+						$('#sendResult').html(thankText);
 						$('#nomes').val('');
 						$('#musica').val('');
 						$('#radiobox-1').prop('checked', true);

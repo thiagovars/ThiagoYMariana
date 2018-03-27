@@ -385,7 +385,7 @@ require_once('inc/traduc.php');
                 <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
 
                     <form id="ajaxForm" method="POST" data-toggle="validator">
-                        <input type="hidden" name="language" value="<?php echo strtolower($_REQUEST['language']); ?>">
+                        <input type="hidden" id="language" value="<?php echo strtolower($_REQUEST['language']); ?>">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
