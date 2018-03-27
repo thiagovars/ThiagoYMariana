@@ -128,6 +128,7 @@ $(document).ready(function() {
 	==============================*/
 	$('#formAssistant').on('click', function(event) {
 		event.preventDefault(event);
+		var language = $('#language').val();
 		var Form = $('#ajaxForm');
 		var hasErrors = Form.validator('validate').has('.has-error').length
 		var veganmenu = $("input[name=veganmenu]:checked").val();
