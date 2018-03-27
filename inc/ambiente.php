@@ -1,2 +1,2 @@
 <?php
-define('ambiente', 'PRODUCAO');
+define('ambiente', 'TESTE');

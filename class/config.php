@@ -1,5 +1,5 @@
 <?php
-include_once('../inc/ambiente.php');
+include_once('inc/ambiente.php');
 switch (ambiente) {
 	case 'PRODUCAO':
 		define("DB_HOST", "mysql472.umbler.com");
