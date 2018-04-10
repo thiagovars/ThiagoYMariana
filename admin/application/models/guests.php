@@ -63,8 +63,8 @@ class Guests extends Model {
 		}
 		$this->query("INSERT INTO guests (created, name, surname, undertwelve, vegan_menu, confirmed) VALUES (:created, :name, :surname, :undertwelve, :vegan_menu, :confirmed)");
 		$this->bind(':created', 'now()');
-		$this->bind(':name', $guest['name']);
-		$this->bind(':surname', $guest['apellido']);
+		$this->bind(':name', utf8_decode($guest['name']));
+		$this->bind(':surname', utf8_decode($guest['apellido']));
 		$this->bind(':undertwelve', $guest['underTwelve']);
 		$this->bind(':vegan_menu', $guest['vegan']);
 		$this->bind(':confirmed', 0);
