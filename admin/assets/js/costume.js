@@ -26,7 +26,21 @@
                 align: align
             }
         });
-		}
+		},
+		showNotificationAddSuccess: function(from, align, msg){
+    	$.notify({
+        	icon: "pe-7s-trash",
+        	message: msg
+
+        },{
+            type: type[5],
+            timer: 100,
+            placement: {
+                from: from,
+                align: align
+            }
+        });
+		},
   };
 
   function remover(guest_id) {
@@ -36,7 +50,6 @@
 	  	url: 'main/remover',
 	  	data: {'guest_id': guest_id},
 	  }).done(function (data) {
-	  	console.log(data)
 	  	var retorno = {};
 	  	try {
 	  		retorno = JSON.parse(data);
@@ -54,5 +67,23 @@
 
 	function agregaInvitado(form) {
 		var form = $('#agregarInvitado').serializeArray();
-		console.log(form)
+		$.ajax({
+			type: 'POST',
+			datatype: 'json',
+			url: 'main/adicionar',
+			data: {'guest': form},
+		}).done(function (data) {
+			var retorno = {};
+			try {
+				retorno = JSON.parse(data);
+				if (retorno.success) {
+					$("#registroInvitado").modal('hide');
+					tymNotify.showNotificationAddSuccess('bottom', 'center', 'Invitado agregado con suceso!');
+				} else {
+					throw (data);
+				}
+			} catch (error) {
+				tymNotify.showNotificationFalse('bottom', 'center', error);
+			}
+		});
 	}

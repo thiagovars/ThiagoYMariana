@@ -34,4 +34,17 @@ class Main extends Controller {
   	$aRetorno['success'] = $guests->remove($_REQUEST['guest_id']);
   	return json_encode($aRetorno, JSON_FORCE_OBJECT);
   }
+
+  function adicionar() {
+    $serialGuest = array();
+    $retorno = array('success' => false);
+    foreach ($_REQUEST['guest'] as $field => $value) {
+      $serialGuest[$value['name']] = $value['value'];
+    }
+    $guest = $this->loadModel('guests');
+    if ($guest->include($serialGuest)) {
+      $retorno['success'] = true;
+    }
+    return json_encode($retorno, JSON_FORCE_OBJECT);
+  }
 }

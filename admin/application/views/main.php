@@ -69,6 +69,8 @@
         </div>
     </div>
 </div>
+<!-- Close Modal -->
+
 <div class="wrapper">
     <?php 
     $color = (strtoupper($user_name) == 'THIAGO') ? 'azure' : 'purple';?>

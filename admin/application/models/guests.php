@@ -51,11 +51,24 @@ class Guests extends Model {
 	function remove($guests_id) {
 		if (empty($guests_id)) {
 			return false;
-		} else {
-			return true;
 		}
 		$this->query("DELETE FROM guests WHERE guest_id = :guest_id");
 		$this->bind(':guest_id', $guests_id);
 		return $this->execute();
+	}
+
+	function include($guest) {
+		if (count($guest) == 0) {
+			return false;
+		}
+		$this->query("INSERT INTO guests (created, name, surname, undertwelve, vegan_menu, confirmed) VALUES (:created, :name, :surname, :undertwelve, :vegan_menu, :confirmed)");
+		$this->bind(':created', 'now()');
+		$this->bind(':name', $guest['name']);
+		$this->bind(':surname', $guest['apellido']);
+		$this->bind(':undertwelve', $guest['underTwelve']);
+		$this->bind(':vegan_menu', $guest['vegan']);
+		$this->bind(':confirmed', 0);
+		$this->execute();
+		return ($this->lastInsertId() > 0);
 	}
 }
