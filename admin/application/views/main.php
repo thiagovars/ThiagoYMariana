@@ -51,11 +51,11 @@
                     <input type="text" class="form-control" id="apellido" aria-describedby="apellidoInvitado" name="apellido" placeholder="Apellido del invitado" />
                 </div>
                 <div class="form-group mb-2">
-                    <input type="checkbox" class="form-checkbox-input" value="true" id="underTwelve" name="underTwelve" />
+                    <input type="checkbox" class="form-checkbox-input" id="underTwelve" name="underTwelve" />
                     <label class="form-checkbox-label" for="underTwelve">
                         Ninõ?
                     </label>
-                    <input type="checkbox" class="form-checkbox-input" value="true" id="vegan" name="vegan" />
+                    <input type="checkbox" class="form-checkbox-input" id="vegan" name="vegan" />
                     <label class="form-checkbox-label" for="underTwelve">
                         Vegano?
                     </label>
@@ -171,7 +171,7 @@
                                         <th>Vegano</th>
                                         <th>Ações</th>
                                     </thead>
-                                    <tbody>
+                                    <tbody id="invitados-content">
                                         <?php foreach ($invitados as $invitado) { 
                                             if ($invitado['confirmed'] == 0) {
                                                 $lineClass = 'normal';

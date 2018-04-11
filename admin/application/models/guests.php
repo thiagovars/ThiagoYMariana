@@ -3,7 +3,7 @@
 class Guests extends Model {
 
 	function getGuests() {
-		$this->query('select guest_id, name, surname, undertwelve, vegan_menu, confirmed from guests');
+		$this->query("SELECT guest_id, name, surname, undertwelve, vegan_menu, confirmed FROM GUESTS ORDER BY NAME");
 		return $this->resultset();
 	}
 
@@ -14,7 +14,7 @@ class Guests extends Model {
 		return $this->single();
 	}
 
-	function getRelations($nameFather) {
+	function getRelations($nameFather) { //possible deprecated
 		$this->query('select * from guests left join guestsusers on guestsusers.child_id = guests.guest_id
 			where guestsusers.father_id in (select g.guest_id from guests g where g.name like :nameFather)');
 		$this->bind(':nameFather', '%'.utf8_encode($nameFather).'%');
@@ -39,7 +39,7 @@ class Guests extends Model {
 	}
 
 	function getName($guests_id) {
-		$this->query('SELECT name, surname FROM guests WHERE guest_id = :guest_id');
+		$this->query('SELECT name, surname FROM guests WHERE guest_id = :guest_id order by name');
 		$this->bind(':guest_id', $guests_id);
 		$resultset = $this->resultset();
 		foreach ($resultset as $key => $guest) {
@@ -65,8 +65,8 @@ class Guests extends Model {
 		$this->bind(':created', 'now()');
 		$this->bind(':name', utf8_decode($guest['name']));
 		$this->bind(':surname', utf8_decode($guest['apellido']));
-		$this->bind(':undertwelve', $guest['underTwelve']);
-		$this->bind(':vegan_menu', $guest['vegan']);
+		$this->bind(':undertwelve', (boolean)$guest['underTwelve']);
+		$this->bind(':vegan_menu', (boolean)$guest['vegan']);
 		$this->bind(':confirmed', 0);
 		$this->execute();
 		return ($this->lastInsertId() > 0);
