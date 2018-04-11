@@ -358,10 +358,20 @@ require_once('inc/traduc.php');
         <div class="container">
         	<div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
-                	<div class="title-block">
+                    <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('contribuição'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em> Abitab Número de Cuenta </em></p>
+                        <p><em class="danger"> Para Brasil e Uruguay </em></p>
+                        <a href="http://bit.ly/2nJEzFo" target="_blank">
+                            <img src="../img/featured/logoColectate.png" width="250" alt="" />
+                        </a>
+                        <p><em>Atenção: Valores em Pesos Urugayos! </em></p>
+                    </div>
+                    <div class="title-block">
+                        <p><em class="danger"> Embreve somente para Uruguay </em></p>
+                        <!-- <a href="http://bit.ly/2nJEzFo" target="_blank"> -->
+                            <img src="../img/featured/logoAbitab.png" width="250" alt="" />
+                        <!-- </a> -->
                     </div>
 
                 </div>
