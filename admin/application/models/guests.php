@@ -61,6 +61,7 @@ class Guests extends Model {
 		if (count($guest) == 0) {
 			return false;
 		}
+		$retorno = array('success' => false, 'lastid' => 0);
 		$this->query("INSERT INTO guests (created, name, surname, undertwelve, vegan_menu, confirmed) VALUES (:created, :name, :surname, :undertwelve, :vegan_menu, :confirmed)");
 		$this->bind(':created', 'now()');
 		$this->bind(':name', utf8_decode($guest['name']));
@@ -69,6 +70,10 @@ class Guests extends Model {
 		$this->bind(':vegan_menu', (boolean)$guest['vegan']);
 		$this->bind(':confirmed', 0);
 		$this->execute();
-		return ($this->lastInsertId() > 0);
+		if ($this->lastInsertId()) {
+			$retorno['success'] = true;
+			$retorno['lastid'] = $this->lastInsertId();
+		}
+		return json_encode($retorno, JSON_FORCE_OBJECT);
 	}
 }

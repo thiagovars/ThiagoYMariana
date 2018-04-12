@@ -70,12 +70,12 @@
 		$.ajax({
 			type: 'POST',
 			datatype: 'json',
-			// url: 'main/adicionar',
+			url: 'main/adicionar',
 			data: {'guest': form},
 		}).done(function (data) {
 			var retorno = {};
 			var trInvitadoIncluded = buildTR(form);
-			console.log(trInvitadoIncluded)
+			console.log(data)
 			// try {
 			// 	retorno = JSON.parse(data);
 			// 	if (retorno.success) {

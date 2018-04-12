@@ -163,7 +163,7 @@
                                 </button>
                             </div>
                             <div class="content table-responsive table-full-width">
-                                <table class="table table-hover">
+                                <table class="table table-hover" id="table-invitados">
                                     <thead>
                                         <th>#</th>
                                         <th>Name</th>
