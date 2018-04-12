@@ -92,6 +92,9 @@ class Terms {
 				'informações'            => 'Informações',
 				'que música gostaria'    => 'Música (opcional)',
 				'sugestões de hostels'   => 'Sugestões de Hostels & Hotéis',
+				'para brasil e uruguay'  => 'Para Brasil e Uruguay',
+				'atenção: valores'       => '<b>Atenção:</b> Valores em PESOS URUGUAYOS(UYU)!',
+				'em breve somente'       => 'Em breve, somente para uruguay',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -130,6 +133,9 @@ class Terms {
 				'informações'            => 'Informaciones',
 				'que música gostaria'    => '¿Canción? (optativa)',
 				'sugestões de hostels'   => 'Sugerencias de Hostels y Hoteles',
+				'para brasil e uruguay'  => 'Para Brasil y Uruguay',
+				'atenção: valores'       => '<b>Atención:</b> ¡Monto en PESOS URUGUAYOS(UYU)!',
+				'em breve somente'       => 'En breve, solo en uruguay',
 			)
 		);
 		return $terms[$langeuage][$string];

@@ -361,14 +361,14 @@ require_once('inc/traduc.php');
                     <div class="title-block">
                         <h1><span><em><?php echo Helper::traduc('contribuição'); ?></em></span></h1>
                         <div class="divider"></div>
-                        <p><em class="danger"> Para Brasil e Uruguay </em></p>
+                        <p><em><?php echo Helper::traduc('para brasil e uruguay') ?></em></p>
                         <a href="http://bit.ly/2nJEzFo" target="_blank">
                             <img src="../img/featured/logoColectate.png" width="250" alt="" />
                         </a>
-                        <p><em>Atenção: Valores em Pesos Urugayos! </em></p>
+                        <p><em><?php echo Helper::traduc('atenção: valores') ?></em></p>
                     </div>
                     <div class="title-block">
-                        <p><em class="danger"> Embreve somente para Uruguay </em></p>
+                        <p><em class="danger"><?php echo Helper::traduc('em breve somente'); ?></em></p>
                         <!-- <a href="http://bit.ly/2nJEzFo" target="_blank"> -->
                             <img src="../img/featured/logoAbitab.png" width="250" alt="" />
                         <!-- </a> -->
