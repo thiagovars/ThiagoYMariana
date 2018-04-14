@@ -75,19 +75,18 @@
 		}).done(function (data) {
 			var retorno = {};
 			var trInvitadoIncluded = buildTR(form);
-			console.log(data)
-			// try {
-			// 	retorno = JSON.parse(data);
-			// 	if (retorno.success) {
-			// 		$("#registroInvitado").modal('hide');
-			// 		tymNotify.showNotificationAddSuccess('bottom', 'center', 'Invitado agregado con suceso!');
-					// $('#invitados-content').append(trInvitadoIncluded);
-			// 	} else {
-			// 		throw (data);
-			// 	}
-			// } catch (error) {
-			// 	tymNotify.showNotificationFalse('bottom', 'center', error);
-			// }
+			try {
+				retorno = JSON.parse(data);
+				if (retorno.success) {
+					$("#registroInvitado").modal('hide');
+					$("#invitados-content").before(trInvitadoIncluded);
+					tymNotify.showNotificationAddSuccess('bottom', 'center', 'Invitado agregado con suceso!');
+				} else {
+					throw (data);
+				}
+			} catch (error) {
+				tymNotify.showNotificationFalse('bottom', 'center', error);
+			}
 		});
 	}
 
@@ -116,42 +115,27 @@
 	}
 
 	function buildTR(form) {
-		// <?php foreach ($invitados as $invitado) { 
-     //        if ($invitado['confirmed'] == 0) {
-     //            $lineClass = 'normal';
-     //        } else if ($invitado['confirmed'] == 1) {
-     //            $lineClass = 'success';
-     //        } else {
-     //            $lineClass = 'danger';
-     //        }
-     //    ?>
-     //    <tr class="<?php echo $lineClass; ?>" id='invitado<?php echo $invitado['guest_id']; ?>'>
-     //        <td><?php echo $invitado['guest_id']; ?></td>
-     //        <td><?php echo utf8_encode($invitado['name']).' '.utf8_encode($invitado['surname']); ?></td>
-     //        <td><i class="fa <?php echo ($invitado['undertwelve']) ? 'fa-check text-success' : 'fa-times text-danger'; ?>"></i></td>
-     //        <td><i class="fa <?php echo ($invitado['vegan_menu']) ? 'fa-check text-success' : 'fa-times text-danger'; ?>"></i></td>
-     //        <td><a href="#invitado*<?php echo $invitado['guest_id']; ?>" onclick="remover(<?php echo $invitado['guest_id']; ?>)"><i class="fa pe-7s-trash"></a></i></td>
-     //    </tr>
-     //    <?php } ?>
-		var html = '<tr class="normal" id="invitado">';
-		for (var i = form.length - 1; i >= 0; i--) {
-			if (form[i].name == 'name') {
-				html += '<td>'+form[i].value+'</td>';
-			}
-			if (form[i].name == 'apellido') {
-				html += '<td>'+form[i].value+'</td>';
-			}
-			if (form[i].name == 'vegan') {
-				var classUnderTwelve = '';
-				if (form[i].value == 1) {classUnderTwelve = 'fa-check text-success';} else {classUnderTwelve = 'fa-times txt-danger';}
-				html += '<td><i class="fa '+classUnderTwelve+'"></i></td>';
-			}
-			if (form[i].name == 'underTwelve') {
-				var classvegan = '';
-				if (form[i].value == 1)  {classvegan = 'fa-check text-success';} else {classvegan = 'fa-times txt-danger';}
-				html += '<td><i class="fa '+classvegan+'"></i></td>';
-			}
+		// recuperar id do usuário já inserido
+		var idguest = 1;
+		var classUnderTwelve = '';
+		var classVegan = '';
+    var index = {'name': 0, 'apellido': 1, 'underTwelve': 2, 'vegan': 3, 'idguest': idguest};
+		var html = '<tr class=\'normal\' id=\'invitado\'>';
+				html += '<td>'+index.idguest+'</td>';
+				html += '<td>'+form[index.name].value+form[index.apellido].value+'</td>';
+		if (form[index.underTwelve].value == 1) {
+			classUnderTwelve = 'fa-check text-success';
+		} else {
+			classUnderTwelve = 'fa-times text-danger';
 		}
+				html += '<td><i class=\'fa '+classUnderTwelve+'\'></i></td>';
+		if (form[index.vegan].value == 1) {
+			classVegan = 'fa-check text-success';
+		} else {
+			classVegan = 'fa-times text-danger';
+		}
+				html += '<td><i class=\'fa '+classVegan+'\'></i></td>';
 		html += '</tr>';
+		console.log(html)
 		return html;
 	}
