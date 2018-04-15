@@ -1,7 +1,7 @@
 <?php 
 include_once(dirname(dirname(dirname(dirname(__FILE__)))).'\inc\ambiente.php');
 switch (ambiente) {
-	case 'TESTE':
+	case 'PRODUCAO':
 		$config['base_url'] = 'http://thiagoymariana.com/admin'; // Base URL including trailing slash (e.g. http://localhost/)
 		$config['db_host'] = 'mysql472.umbler.com'; // Database host (e.g. localhost)
 		$config['db_name'] = 'tym_db'; // Database name
