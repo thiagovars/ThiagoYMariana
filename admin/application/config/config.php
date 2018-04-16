@@ -19,6 +19,7 @@ switch (ambiente) {
 		$config['db_name'] = 'tym_db'; // Database name
 		$config['db_username'] = 'thiagovars'; // Database username
 		$config['db_password'] = 'U.EL7|y.o9|UA'; // Database password
+		$config['index_page'] = '';
 
 		define('DB_HOST', 'mysql472.umbler.com');
 		define('DB_NAME', 'tym_db');
