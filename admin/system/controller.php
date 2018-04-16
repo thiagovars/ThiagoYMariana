@@ -31,8 +31,8 @@ class Controller {
 	public function redirect($loc)
 	{
 		global $config;
-		
-		header('Location: '. $config['base_url'] . $loc);
+		header('Location: '. $config['base_url'] . $loc, true, 301);
+		exit;
 	}
     
 }

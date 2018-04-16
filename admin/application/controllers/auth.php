@@ -11,8 +11,8 @@ class Auth extends Controller {
 		$session = $this->loadHelper('session_helper');
 		$strings = $this->loadHelper('string_helper');
 		$usuarios_db = $this->loadModel('users');
-		$user = $_POST['user'];
-		$passw = $_POST['password'];
+		$user = $_REQUEST['user'];
+		$passw = $_REQUEST['password'];
 		if ($usuarios_db->getAuthentication($user, $passw)) {
 			$session->set('user', $strings->caption($user));
 			$this->redirect('/main');

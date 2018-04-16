@@ -4,10 +4,10 @@ class Main extends Controller {
 	
 	function index()
 	{
-		if (empty($_SESSION['user'])) {
-			$this->redirect('/auth');
-		}
 		$session = $this->loadHelper('session_helper');
+    if (empty($session->get('user'))) {
+      $this->redirect('/auth');
+    }
 		$guests = $this->loadModel('guests');
 		$template = $this->loadView('main');
 		$template->set('user_name', $session->get('user'));
