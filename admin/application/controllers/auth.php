@@ -15,7 +15,7 @@ class Auth extends Controller {
 		$passw = $_REQUEST['password'];
 		if ($usuarios_db->getAuthentication($user, $passw)) {
 			$session->set('user', $strings->caption($user));
-			$this->redirect('/main');
+			$this->redirect('/main', 'location', 301);
 		} else {
 			$this->redirect('/auth');
 		}
