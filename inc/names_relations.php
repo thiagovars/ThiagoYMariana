@@ -13,7 +13,7 @@ require_once('../class/db.php');
 $names = explode(' ', $_POST['name']);
 $namesDB = array();
 $db = new db();
-$SQL = "SELECT name, surname from guests where name like CONCAT(:name, '%') AND confirmed = 0";
+$SQL = "SELECT name, surname FROM guests WHERE name like CONCAT(:name, '%') AND confirmed = 0";
 if (count($names) > 1) {
 	$SQL .= ' and surname = :surname';
 }
