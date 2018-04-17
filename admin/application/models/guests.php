@@ -3,7 +3,7 @@
 class Guests extends Model {
 
 	function getGuests() {
-		$this->query("SELECT guest_id, name, surname, undertwelve, vegan_menu, confirmed FROM guests ORDER BY name");
+		$this->query("SELECT guest_id, name, surname, undertwelve, vegan_menu, confirmed FROM guests ORDER BY guest_id");
 		return $this->resultset();
 	}
 
