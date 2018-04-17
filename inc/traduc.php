@@ -1,6 +1,7 @@
 <?php
 
-require_once(dirname(dirname(__FILE__)).'\inc\terms.php');
+define(ds, DIRECTORY_SEPARATOR);
+include_once(dirname(dirname(__FILE__)).ds.'inc'.ds.'terms.php');
 
 class Helper {
 	static function traduc($string = '') {
