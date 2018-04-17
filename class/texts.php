@@ -1,5 +1,5 @@
 <?php
-require_once ('db.php');
+require_once (dirname(__FILE__).ds.'db.php');
 
 class Texts {
 
