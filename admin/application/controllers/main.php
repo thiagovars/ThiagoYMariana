@@ -4,12 +4,12 @@ class Main extends Controller {
 	
 	function index()
 	{
-		$session = $this->loadHelper('session_helper');
+		$guests   = $this->loadModel('guests');
+		$template = $this->loadView('main');
+    $session  = $this->loadHelper('session_helper');
     if (empty($session->get('user'))) {
       $this->redirect('/auth');
     }
-		$guests = $this->loadModel('guests');
-		$template = $this->loadView('main');
 		$template->set('user_name', $session->get('user'));
 		$template->set('invitados', $guests->getGuests());
 		$template->set('total_guests', $guests->getTotalGuests());
@@ -47,4 +47,4 @@ class Main extends Controller {
     }
     return json_encode($retorno, JSON_FORCE_OBJECT);
   }
-}
+}//close class Main
