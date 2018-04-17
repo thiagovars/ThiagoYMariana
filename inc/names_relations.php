@@ -8,8 +8,8 @@
  * @param String $name Nome do convidade para recuperar suas relações
  * @return array Conteúdo do banco com a relação de nomes
  */
-require_once('../class/db.php');
-
+define('ds', DIRECTORY_SEPARATOR);
+include_once(dirname(dirname(__FILE__)).ds.'class'.ds.'db.php');
 $names = explode(' ', $_POST['name']);
 $namesDB = array();
 $db = new db();
