@@ -1,5 +1,5 @@
 <?php
-include_once(dirname(dirname(__FILE__)).'\inc\ambiente.php');
+include_once(dirname(dirname(__FILE__)).ds.'inc'.ds.'ambiente.php');
 switch (ambiente) {
 	case 'PRODUCAO':
 		define("DB_HOST", "mysql472.umbler.com");
