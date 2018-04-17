@@ -1,5 +1,6 @@
 <?php 
-require_once('inc/traduc.php'); 
+define(ds, DIRECTORY_SEPARATOR);
+require_once('inc'.ds.'traduc.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

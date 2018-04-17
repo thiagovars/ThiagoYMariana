@@ -1,5 +1,6 @@
 <?php 
-include_once(dirname(dirname(dirname(dirname(__FILE__)))).'\inc\ambiente.php');
+define(ds, DIRECTORY_SEPARATOR);
+include_once(dirname(dirname(dirname(dirname(__FILE__)))).ds.'inc'.ds.'ambiente.php');
 switch (ambiente) {
 	case 'DESENVOLVIMENTO':
 		$config['base_url'] = 'http://localhost/thiagoymariana/admin'; // Base URL including trailing slash (e.g. http://localhost/)

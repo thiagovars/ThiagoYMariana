@@ -11,7 +11,8 @@
  * @author Pedro Silveira <thiagovars@gmail.com>
  */
 
-require_once('class/texts.php');
+define(ds, DIRECTORY_SEPARATOR);
+require_once('class'.ds.'texts.php');
 
 class Terms {
 
