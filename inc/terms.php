@@ -123,7 +123,7 @@ class Terms {
 				'presença'               => 'asistencia?',
 				'obrigado'               => '¡Gracias!',
 				'confirmar'              => '¡Asistiré!',
-				'não confirmar'          => 'No Asistiré!',
+				'não confirmar'          => '¡No Asistiré!',
 				'seu nome'               => 'Tu Nombre',
 				'seu e-mail'             => 'Tu Dirección de Mail',
 				'sua mensagem'           => 'Tu Mensaje',

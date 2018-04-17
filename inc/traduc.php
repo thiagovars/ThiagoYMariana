@@ -1,6 +1,6 @@
 <?php
 
-require_once('inc/terms.php');
+require_once(dirname(dirname(__FILE__)).'\inc\terms.php');
 
 class Helper {
 	static function traduc($string = '') {
