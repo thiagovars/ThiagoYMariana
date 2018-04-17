@@ -136,12 +136,6 @@ require_once('inc/traduc.php');
                 	<div class="profile">
                         <h2>Thiago <span>da Silveira</span></h2>
                         <img src="../img/perfil/Thiago.jpg" class="img-responsive img-circle" alt="Groom"/>
-                        <p>
-                            "[...]Para abraçar seu irmão
-                            E beijar sua menina na rua
-                            É que se fez o seu braço
-                            O seu lábio e a sua voz [...]"
-                        </p>
                 		<div class="social-icons">
                             <a href="https://www.facebook.com/capirotoKhun" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="https://instagram.com/pedrothiagosilveira" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
