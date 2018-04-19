@@ -3,7 +3,8 @@
 class Auth extends Controller {
 
 	function index() {
-		$template = $this->loadView('login');
+		$this->loadHelper('url_helper');
+		$template = $this->loadView('loginV2');
 		$template->render();
 	}
 

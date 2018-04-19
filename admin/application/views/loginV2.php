@@ -1,3 +1,6 @@
+<?php 
+$base_url = dirname(__FILE__);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
