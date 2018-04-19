@@ -35,7 +35,7 @@ $base_url = dirname(__FILE__);
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="<?php echo BASE_URL; ?>/auth/login">
+				<form method="POST" class="login100-form validate-form" action="<?php echo BASE_URL; ?>/auth/login">
 					<span class="login100-form-title p-b-26">
 						Bem-viiiindu ao Déshibordi
 					</span>
