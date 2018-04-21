@@ -1,5 +1,5 @@
 <?php 
-define(ds, DIRECTORY_SEPARATOR);
+define('ds', DIRECTORY_SEPARATOR);
 include_once(dirname(dirname(dirname(dirname(__FILE__)))).ds.'inc'.ds.'ambiente.php');
 switch (ambiente) {
 	case 'DESENVOLVIMENTO':
