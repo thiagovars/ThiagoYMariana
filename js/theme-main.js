@@ -128,27 +128,36 @@ $(document).ready(function() {
 	==============================*/
 	$('#formAssistant').on('click', function(event) {
 		event.preventDefault(event);
-		var language = $('#language').val();
+		var language  = $('#language').val();
 		var thankText = '';
+		var failText  = '';
 		if (language == 'pt') {
 			thankText = '<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por comparecer!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar outro convidado?</button>';
+			failText  = '<img src="../img/form-icon-error.png"/><br/><span class="title error">Erro!</span><br/><br /><strong>Não conseguimos te identificar, por favor tente novamente mais tarde.</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar outro convidado?</button>';
 		} else {
 			thankText = '<img src="../img/form-icon-ok.png"/><br/><span class="title success">¡Confirmado!</span><br/><br /><strong>¡Gracias por asistir!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar otro invitado?</button>';
+			failText  = '<img src="../img/form-icon-error.png"/><br/><span class="title error">¡Error!</span><br/><br /><strong>¡No fue posible identificarte! Intentá de nuevo más tarde.</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Confirmar otro invitado?</button>';
 		}
 		var Form = $('#ajaxForm');
 		var hasErrors = Form.validator('validate').has('.has-error').length
 		var veganmenu = $("input[name=veganmenu]:checked").val();
+		var Music = $("#musica").val();
 		if (!hasErrors && veganmenu != 'undefined'){
 			$('#fullscreenloading').show();
 			$('#boxedResult').show();
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
 			$.ajax({
 				type: 'POST',
-				url: '../inc/confirm.php',
+				url: '../inc/confirm.php?confirm=1',
 				data: Form.serialize(),
 				success: function(msg){
-					if (msg) {
+					if (msg == 1) {
 						$('#sendResult').html(thankText);
+						$('#nomes').val('');
+						$('#musica').val('');
+						$('#radiobox-1').prop('checked', true);
+					} else {
+						$('#sendResult').html(failText);
 						$('#nomes').val('');
 						$('#musica').val('');
 						$('#radiobox-1').prop('checked', true);
@@ -162,20 +171,35 @@ $(document).ready(function() {
 	});
 	$('#formNotAssistant').on('click', function(event) {
 		event.preventDefault(event);
-		var Form = $('#ajaxForm');
+		var Form      = $('#ajaxForm');
+		var language  = $('#language').val();
 		var hasErrors = Form.validator('validate').has('.has-error').length
 		var veganmenu = $("input[name=veganmenu]:checked").val();
+		var thankText = '';
+		var failText  = '';
+		if (language == 'pt') {
+			thankText = '<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por sua resposta</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Fechar</button>';
+			failText  = '<img src="../img/form-icon-error.png"/><br/><span class="title error">Erro!</span><br/><br /><strong>Não conseguimos te identificar, por favor tente novamente mais tarde.</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Fechar</button>';
+		} else {
+			thankText = '<img src="../img/form-icon-ok.png"/><br/><span class="title success">¡Confirmado!</span><br/><br /><strong>¡Gracias tu respuesta!</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Cerrar</button>';
+			failText  = '<img src="../img/form-icon-error.png"/><br/><span class="title error">¡Error!</span><br/><br /><strong>¡No fue posible identificarte! Intentá de nuevo más tarde.</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Cerrar</button>';
+		}
 		if (!hasErrors){
 			$('#fullscreenloading').show();
 			$('#boxedResult').show();
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
 			$.ajax({
 				type: 'POST',
-				url: '../inc/confirm.php?confirm=no',
+				url: '../inc/confirm.php?confirm=0',
 				data: Form.serialize(),
 				success: function(msg){
-					if (msg) {
-						$('#sendResult').html('<img src="../img/form-icon-ok.png"/><br/><span class="title success">Confirmado!</span><br/><br /><strong>Obrigado por sua resposta</strong><br /><br /><button class="btn btn-primary btn-lg BtnCloseResult" type="button">Fechar</button>');
+					if (msg == 1) {
+						$('#sendResult').html(thankText);
+						$('#nomes').val('');
+						$('#musica').val('');
+						$('#radiobox-1').prop('checked', true);
+					} else {
+						$('#sendResult').html(failText);
 						$('#nomes').val('');
 						$('#musica').val('');
 						$('#radiobox-1').prop('checked', true);
