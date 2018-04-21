@@ -4,7 +4,10 @@ require_once('inc/terms.php');
 
 class Helper {
 	static function traduc($string = '') {
-		$language = strtolower($_REQUEST['language']);
-		return Terms::getTerms($language, $string);
+		return Terms::getTerms(self::getLanguage(), $string);
+	}
+
+	static function getLanguage() {
+		return ($_REQUEST['language']) ?? 'pt';
 	}
 }
