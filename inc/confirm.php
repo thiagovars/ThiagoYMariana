@@ -6,8 +6,8 @@
  *
  * @author Thiago Silveira <thiagovars@gmail.com>
  */
-require_once('../class/db.php');
-
+require_once(dirname(__FILE__).ds.'class'.ds.'db.php');
+die('entrou');
 $db = new db();
 $name = explode(' ', $_POST['name']);
 $db->query("select guest_id from guests where name LIKE CONCAT(:name, '%') and surname LIKE CONCAT('%', :surname, '%')");
