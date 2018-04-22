@@ -9,10 +9,10 @@
 define('ds', DIRECTORY_SEPARATOR);
 require_once(dirname(dirname(__FILE__)).ds.'class'.ds.'db.php');
 
-if (empty($_POST['veganmenu'])) {
-	$_POST['veganmenu'] = false;
+if (empty($_POST['veganmenu']) || $_POST['veganmenu'] == 'false') {
+	$_POST['veganmenu'] = 0;
 } else {
-	$_POST['veganmenu'] = (bool)$_POST['veganmenu'];
+	$_POST['veganmenu'] = 1;
 }
 $db = new db();
 $resposta = array('success' => false);
@@ -33,7 +33,7 @@ if (!$_REQUEST['confirm']) {
 } else {
 	$db->query("UPDATE guests SET vegan_menu = :veganmenu, confirmed = 1, modified = now() WHERE guest_id = :guest_id");
 	var_dump('antes de gravar');
-	var_dump(($_POST['veganmenu'] ?? 0));
+	var_dump($_POST['veganmenu']);
 	exit;
 	$db->bind(":veganmenu", $_POST['veganmenu']);
 	$db->bind(":guest_id", $resultado['guest_id']);
