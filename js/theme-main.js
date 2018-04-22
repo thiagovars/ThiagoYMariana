@@ -146,19 +146,25 @@ $(document).ready(function() {
 			$('#fullscreenloading').show();
 			$('#boxedResult').show();
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
-			console.log(language, hasErrors, veganmenu)
 			$.ajax({
 				type: 'POST',
+				datatype: 'json',
 				url: '../inc/confirm.php?confirm=1',
 				data: Form.serialize(),
-				success: function(resposta){
-					if (resposta.success) {
-						$('#sendResult').html(thankText);
-						$('#nomes').val('');
-						$('#musica').val('');
-						$('#radiobox-1').prop('checked', true);
-					} else {
-						$('#sendResult').html(failText);
+				success: function(data){
+					var resposta = {};
+					reposta = JSON.parse(data);
+					try {
+						if (resposta.success) {
+							$('#sendResult').html(thankText);
+							$('#nomes').val('');
+							$('#musica').val('');
+							$('#radiobox-1').prop('checked', true);
+						} else {
+							throw(failText);
+						}
+					} catch (error) {
+						$('#sendResult').html(error);
 						$('#nomes').val('');
 						$('#musica').val('');
 						$('#radiobox-1').prop('checked', true);
