@@ -32,9 +32,6 @@ if (!$_REQUEST['confirm']) {
 	}
 } else {
 	$db->query("UPDATE guests SET vegan_menu = :veganmenu, confirmed = 1, modified = now() WHERE guest_id = :guest_id");
-	var_dump('antes de gravar');
-	var_dump($_POST['veganmenu']);
-	exit;
 	$db->bind(":veganmenu", $_POST['veganmenu']);
 	$db->bind(":guest_id", $resultado['guest_id']);
 	$db->execute();
