@@ -72,7 +72,7 @@ class Terms {
 				'galeria'                => 'Galeria',
 				'comparecer?'            => 'Você vai aparecer?',
 				'começa a viagem...'     => 'Começa nossa viagem...',
-				'ventos de primavera'    => 'Ventos Primaverais.',
+				'ventos de primavera'    => 'Ventos Primaveris.',
 				'ano novo, vida nova'    => 'Ano novo, vida nova.',
 				'tempo circular'         => 'Tempo circular.',
 				'por isso daremos'       => 'Por isso daremos nosso',
@@ -94,7 +94,7 @@ class Terms {
 				'sugestões de hostels'   => 'Sugestões de Hostels & Hotéis',
 				'para brasil e uruguay'  => 'Para Brasil e Uruguay',
 				'atenção: valores'       => '<b>Atenção:</b> Valores em PESOS URUGUAYOS(UYU)!',
-				'em breve somente'       => 'Em breve, somente para uruguay',
+				'em breve somente'       => 'Em breve, somente para Uruguay',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -135,7 +135,7 @@ class Terms {
 				'sugestões de hostels'   => 'Sugerencias de Hostels y Hoteles',
 				'para brasil e uruguay'  => 'Para Brasil y Uruguay',
 				'atenção: valores'       => '<b>Atención:</b> ¡Monto en PESOS URUGUAYOS(UYU)!',
-				'em breve somente'       => 'En breve, solo en uruguay',
+				'em breve somente'       => 'En breve, solo en Uruguay',
 			)
 		);
 		return $terms[$langeuage][$string];
