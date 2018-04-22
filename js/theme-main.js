@@ -153,8 +153,9 @@ $(document).ready(function() {
 				data: Form.serialize(),
 				success: function(data){
 					var resposta = {};
-					resposta = JSON.parse(data);
 					try {
+						resposta = JSON.parse(data);
+						console.log(resposta.success)
 						if (resposta.success) {
 							$('#sendResult').html(thankText);
 							$('#nomes').val('');
@@ -197,16 +198,23 @@ $(document).ready(function() {
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
 			$.ajax({
 				type: 'POST',
+				datatype: 'json',
 				url: '../inc/confirm.php?confirm=0',
 				data: Form.serialize(),
-				success: function(msg){
-					if (msg == 1) {
-						$('#sendResult').html(thankText);
-						$('#nomes').val('');
-						$('#musica').val('');
-						$('#radiobox-1').prop('checked', true);
-					} else {
-						$('#sendResult').html(failText);
+				success: function(data){
+					var resposta = {};
+					resposta = JSON.parse(data);
+					try {
+						if (resposta.success) {
+							$('#sendResult').html(thankText);
+							$('#nomes').val('');
+							$('#musica').val('');
+							$('#radiobox-1').prop('checked', true);
+						} else {
+							throw(failText);
+						}
+					} catch (error) {
+						$('#sendResult').html(error);
 						$('#nomes').val('');
 						$('#musica').val('');
 						$('#radiobox-1').prop('checked', true);
