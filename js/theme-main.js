@@ -146,12 +146,13 @@ $(document).ready(function() {
 			$('#fullscreenloading').show();
 			$('#boxedResult').show();
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
+			console.log(laguage, hasErrors, veganmenu)
 			$.ajax({
 				type: 'POST',
 				url: '../inc/confirm.php?confirm=1',
 				data: Form.serialize(),
-				success: function(msg){
-					if (msg == 1) {
+				success: function(resposta){
+					if (resposta.success) {
 						$('#sendResult').html(thankText);
 						$('#nomes').val('');
 						$('#musica').val('');
