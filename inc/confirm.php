@@ -10,12 +10,10 @@ define('ds', DIRECTORY_SEPARATOR);
 require_once(dirname(dirname(__FILE__)).ds.'class'.ds.'db.php');
 
 if (empty($_POST['veganmenu'])) {
-	$_POST['veganmenu'] = 0;
+	$_POST['veganmenu'] = false;
 } else {
-	$_POST['veganmenu'] = (int)$_POST['veganmenu'];
+	$_POST['veganmenu'] = (bool)$_POST['veganmenu'];
 }
-var_dump($_POST);
-exit;
 $db = new db();
 $resposta = array('success' => false);
 
