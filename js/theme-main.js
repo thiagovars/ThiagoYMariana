@@ -155,7 +155,6 @@ $(document).ready(function() {
 					var resposta = {};
 					try {
 						resposta = JSON.parse(data);
-						console.log(resposta.success)
 						if (resposta.success) {
 							$('#sendResult').html(thankText);
 							$('#nomes').val('');

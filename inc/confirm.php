@@ -8,6 +8,10 @@
  */
 define('ds', DIRECTORY_SEPARATOR);
 require_once(dirname(dirname(__FILE__)).ds.'class'.ds.'db.php');
+
+var_dump($_POST);
+exit;
+
 $db = new db();
 $resposta = array('success' => false);
 
