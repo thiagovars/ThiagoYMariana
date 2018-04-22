@@ -13,7 +13,7 @@ include_once(dirname(dirname(__FILE__)).ds.'class'.ds.'db.php');
 $names = explode(' ', $_POST['name']);
 $namesDB = array();
 $db = new db();
-$SQL = "SELECT name, surname FROM guests WHERE name like CONCAT(:name, '%') AND confirmed = 0";
+$SQL = "SELECT name, surname FROM guests WHERE name like CONCAT(:name, '%')";
 if (count($names) > 1) {
 	$SQL .= ' and surname = :surname';
 }
