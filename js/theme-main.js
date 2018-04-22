@@ -146,7 +146,7 @@ $(document).ready(function() {
 			$('#fullscreenloading').show();
 			$('#boxedResult').show();
 			$('#sendResult').html('<div class="uil-rolling-css"><div><div></div><div></div></div></div>');
-			console.log(laguage, hasErrors, veganmenu)
+			console.log(language, hasErrors, veganmenu)
 			$.ajax({
 				type: 'POST',
 				url: '../inc/confirm.php?confirm=1',
