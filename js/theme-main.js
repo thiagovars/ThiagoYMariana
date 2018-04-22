@@ -153,7 +153,7 @@ $(document).ready(function() {
 				data: Form.serialize(),
 				success: function(data){
 					var resposta = {};
-					reposta = JSON.parse(data);
+					resposta = JSON.parse(data);
 					try {
 						if (resposta.success) {
 							$('#sendResult').html(thankText);
