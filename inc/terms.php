@@ -65,7 +65,7 @@ class Terms {
 				'casal'                  => 'Casal',
 				'nossa história'         => 'Nossa História',
 				'galeria'                => 'Galeria',
-				'contribuição'           => 'Contribuição',
+				'contribuição'           => 'Presente dos Noivos',
 				'comparecer'             => 'Confirmar Presença',
 				'nossa'                  => 'Nossa',
 				'história'               => 'História',
