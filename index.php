@@ -363,10 +363,9 @@ require_once('inc'.ds.'traduc.php');
                         <p><em><?php echo Helper::traduc('atenção: valores') ?></em></p>
                     </div>
                     <div class="title-block">
-                        <p><em class="danger"><?php echo Helper::traduc('em breve somente'); ?></em></p>
-                        <!-- <a href="http://bit.ly/2nJEzFo" target="_blank"> -->
-                            <img src="../img/featured/logoAbitab.png" width="250" alt="" />
-                        <!-- </a> -->
+                        <p><em class="danger">Colectivo Nº 66557 "Thiago y Mariana" (A partir del 3 de setiembre)</em></p>
+                            <img src="../img/featured/logo-redPagos.jpg" width="250" alt="" />
+                        <p></p>
                     </div>
 
                 </div>
