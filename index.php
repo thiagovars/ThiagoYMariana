@@ -312,7 +312,17 @@
                         <p><em><?php echo Helper::traduc('atenção: valores') ?></em></p>
                     </div>
                     <div class="title-block">
-                        <p><em class="danger">Colectivo Nº 66557 "Thiago y Mariana" (A partir del 3 de setiembre)</em></p>
+                    <?php
+                        $date_nail = strtotime('2018-09-03');
+                        $date_haystack = strtotime(date('Y-m-d', time()));
+                        $day_condition = '';
+                        if ($date_haystack < $date_nail) {
+                            $day_condition = '(A partir del 3 de setiembre)';
+                        } else {
+                            $day_condition = '';
+                        }
+                    ?>
+                        <p><em class="danger">Colectivo Nº 66557 "Thiago y Mariana" <?php echo $day_condition;?></em></p>
                             <img src="../img/featured/logo-RedPagos.jpg" width="250" alt="" />
                         <p></p>
                     </div>
@@ -346,7 +356,7 @@
                                       <input type="text" id="nomes" class="form-control" name="name" placeholder="<?php echo Helper::traduc('seu nome'); ?>" required>
                                     </div>
                                     <div class="help-block with-errors"></div>
-                                </div>
+                                </div>/
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
