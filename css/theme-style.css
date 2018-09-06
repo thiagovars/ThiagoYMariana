@@ -253,6 +253,14 @@ ul.names li{
 .hour span{
 	font-size:20px;
 }
+
+.hour-cerimonia {
+	font-size:30px;
+}
+.hour-cerimonia  span{
+	font-size:20px;
+}
+
 .place{
 	font-size:20px;
 }
