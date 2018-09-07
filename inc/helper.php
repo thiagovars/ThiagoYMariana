@@ -20,4 +20,15 @@ class Helper {
 	static function getLanguage() {
 		return (empty($_REQUEST['language'])) ? 'pt' : $_REQUEST['language'];
 	}
+
+	static function base_path()
+	{
+		$uri = explode('/', $_SERVER['REQUEST_URI']);
+		if (in_array('es', $uri)) {
+			return '../';
+		} else if (in_array('pt', $uri)) {
+			return '../';
+		}
+		return;
+	}
 }

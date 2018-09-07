@@ -1,6 +1,6 @@
 <?php 
 define('ds', DIRECTORY_SEPARATOR);
-require_once('inc'.ds.'traduc.php'); 
+require_once('inc'.ds.'helper.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,36 +14,36 @@ require_once('inc'.ds.'traduc.php');
     <title><?php echo Helper::traduc('title-main') ?></title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>css/bootstrap.min.css">
     
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/themes_base_jquery-ui.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>css/themes_base_jquery-ui.css">
 
     <!-- TimeCircles-countdown -->
-    <link rel="stylesheet" href="libs/TimeCircles-countdown/TimeCircles.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>libs/TimeCircles-countdown/TimeCircles.css">
 
     <!-- Owl stylesheet -->
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="libs/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>libs/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>libs/owl-carousel/owl.theme.css">
 
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>libs/magnific-popup/magnific-popup.css">
 
     <!-- Loading Rolling -->
-    <link rel="stylesheet" href="libs/loading/rolling.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>libs/loading/rolling.css">
 
     <!-- Fonts -->
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Oswald:400,300,700'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,700italic,600italic,800italic'>
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>css/font-awesome.min.css">
 
     <!-- Theme Main Style -->
-    <link rel="stylesheet" href="css/theme-style.css">
+    <link rel="stylesheet" href="<?php echo Helper::base_path();?>css/theme-style.css">
     
     <!--========================Color Variant====================-->
-    <link rel="stylesheet" type="text/css" href="css/colors/pink.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo Helper::base_path();?>css/colors/pink.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

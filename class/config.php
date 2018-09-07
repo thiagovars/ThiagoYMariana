@@ -7,8 +7,8 @@ switch (ambiente) {
 		define("DB_PASS", "U.EL7|y.o9|UA");
 		define("DB_NAME", "tym_db");
 		break;
-	
-	default:
+		
+		default:
 		define("DB_HOST", "localhost");
 		define("DB_USER", "root");
 		define("DB_PASS", "");
