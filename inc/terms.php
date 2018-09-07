@@ -95,7 +95,6 @@ class Terms {
 				'para brasil e uruguay'  => 'Para Brasil e Uruguay',
 				'atenção: valores'       => '<b>Atenção:</b> Valores em PESOS URUGUAYOS(UYU)!',
 				'em breve somente'       => 'Em breve, somente para Uruguay',
-				'cerimônia'              => 'Cerimônia',
 			),
 			'es' => array(
 				'title-main'             => 'Invitación Virtual - Casamiento Thiago & Mariana',
@@ -137,7 +136,6 @@ class Terms {
 				'para brasil e uruguay'  => 'Para Brasil y Uruguay',
 				'atenção: valores'       => '<b>Atención:</b> ¡Monto en PESOS URUGUAYOS(UYU)!',
 				'em breve somente'       => 'En breve, solo en Uruguay',
-				'cerimônia'              => 'Ceremonia',
 				)
 			);
 			return $terms[$langeuage][$string];

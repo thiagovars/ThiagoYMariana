@@ -30,7 +30,6 @@
                     </ul>
                     <div class="date"><?php echo Helper::traducMes('novembro', true) ?> <span>24</span> 2018</div>
                     <div class="hour">20:00 <span>pm</span></div>
-                    <div class="hour-cerimonia"><span><?php echo Helper::traduc('cerimônia'); ?> 21:00 pm</span></div>
                     <div class="place">
                     	<h3><?php echo Helper::traduc('salão festas e eventos'); ?></h3>
                         <p>Juan José Quesada, 3434 esq. Marne - Montevideo, Uruguay.</p>
