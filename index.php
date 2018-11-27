@@ -339,46 +339,12 @@
         	<div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
                 	<div class="title-block">
-                        <h1><?php echo Helper::traduc('quer confirmar'); ?> <span><em><?php echo Helper::traduc('presença'); ?></em></span></h1>
+                        <h1><?php echo Helper::traduc('obrigado por comparecer!'); ?></h1>
                         <div class="divider"></div>
-                        <p><em><?php echo Helper::traduzir('por favor,'); ?></em></p>
+                        <p><em><?php echo Helper::traduc('em breve, fotos'); ?></em></p>
                     </div>
                     
                 </div>
-                <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-
-                    <form id="ajaxForm" method="POST" data-toggle="validator">
-                        <input type="hidden" id="language" value="<?php echo Helper::getLanguage(); ?>">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="ui-widget">
-                                      <input type="text" id="nomes" class="form-control" name="name" placeholder="<?php echo Helper::traduc('seu nome'); ?>" required>
-                                    </div>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <input type="text" id="musica" class="form-control" name="musica" placeholder="<?php echo Helper::traduc('que música gostaria'); ?>">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group col-md-6">
-                                    <input type="radio" class='form-control' id="radiobox-1" name="veganmenu" value="false" required checked='checked'>
-                                    <label for="radio-1" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i><?php echo Helper::traduc('menu normal'); ?></label>
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="radio" id="radiobox-2" name="veganmenu" value="true" required>
-                                    <label for="radio-2" class="radio-button"><i class="fa fa-circle-o" aria-hidden="true"></i><?php echo Helper::traduc('menu vegano'); ?></label>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                    </form>
-                    <button class="btn btn-primary btn-lg" id='formAssistant'><?php echo Helper::traduc('confirmar') ?></button>
-                    <button class="btn btn-primary btn-lg" id='formNotAssistant'><?php echo Helper::traduc('não confirmar') ?></button>
-            	</div>
             </div>
         </div>
     </section>
